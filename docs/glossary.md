@@ -1,0 +1,259 @@
+- Parameter found in catalog, profile
+  - definition: Parameters provide a mechanism for the dynamic assignment of value(s) in a control.
+- Parameter label found in catalog, profile
+  - definition: A placeholder for a missing value, in display.
+- Parameter description found in catalog, profile
+  - definition: Indicates and explains the purpose and use of a parameter
+- Constraint found in catalog, profile
+  - definition: A formal or informal expression of a constraint or test
+- Guideline found in catalog, profile
+  - definition: A prose statement that provides a recommendation for the use of a parameter.
+- Value found in catalog, profile, ssp
+  - definition for value is different between these schemas
+    - catalog: Indicates a permissible value for a parameter or property
+    - profile: Indicates a permissible value for a parameter or property
+    - ssp: The phrase or string that fills-in the parameter and completes the requirement statement.
+- Selection found in catalog, profile
+  - definition: Presenting a choice among alternatives
+- Choice found in catalog, profile
+  - definition: A value selection among several such options
+- Part found in catalog, profile
+  - definition: A partition or component of a control or part
+- Prose found in catalog, profile
+  - definition: Prose permits multiple paragraphs, lists, tables etc.
+- Publication metadata found in catalog, profile, component, ssp
+  - definition: Provides information about the publication and availability of the containing document.
+- Back matter found in catalog, profile, component, ssp
+  - definition: A collection of citations and resource references.
+- Link found in catalog, profile, component, ssp
+  - definition: A reference to a local or remote resource
+- Publication Timestamp found in catalog, profile, component, ssp
+  - definition: The date and time this document was published.
+- Last modified timestamp found in catalog, profile, component, ssp
+  - definition: Date and time of last modification.
+- Document version found in catalog, profile, component, ssp
+  - definition: The version of the document content.
+- OSCAL version found in catalog, profile, component, ssp
+  - definition: OSCAL model version.
+- Document Identifier found in catalog, profile, component, ssp
+  - definition: A document identifier qualified by an identifier type.
+- Property found in catalog, profile, component, ssp
+  - definition: A value with a name, attributed to the containing control, part, or group.
+- Annotation found in catalog, profile, component, ssp
+  - definition: A name/value pair with optional explanatory remarks.
+- Party (organization or person) found in catalog, profile, component, ssp
+  - definition: A responsible entity, either singular (an organization or person) or collective (multiple persons)
+- Party Reference found in catalog, profile, component, ssp
+  - definition: References a party defined in metadata.
+- Person found in catalog, profile, component, ssp
+  - definition: A person, with contact information
+- Organization found in catalog, profile, component, ssp
+  - definition: An organization or legal entity (not a person), with contact information
+- Personal Identifier found in catalog, profile, component, ssp
+  - definition: An identifier for a person (such as an ORCID) using a designated scheme.
+- Organization Identifier found in catalog, profile, component, ssp
+  - definition: An identifier for an organization using a designated scheme.
+- Resource link found in catalog, profile, component, ssp
+  - definition: A pointer to an external copy of a document with optional hash for verification
+- Person Name found in catalog, profile, component, ssp
+  - definition: Full (legal) name of an individual
+- Organization Name found in catalog, profile, component, ssp
+  - definition: Full (legal) name of an organization
+- short-name found in catalog, profile, component, ssp
+  - definition: A common name, short name or acronym
+- Address found in catalog, profile, component, ssp
+  - definition: A postal address.
+- Address line found in catalog, profile, component, ssp
+  - definition: A single line of an address.
+- City found in catalog, profile, component, ssp
+  - definition: City, town or geographical region for mailing address
+- State found in catalog, profile, component, ssp
+  - definition: State, province or analogous geographical region for mailing address
+- Postal Code found in catalog, profile, component, ssp
+  - definition: Postal or ZIP code for mailing address
+- Country found in catalog, profile, component, ssp
+  - definition: Country for mailing address
+- Email found in catalog, profile, component, ssp
+  - definition: Email address
+- Telephone found in catalog, profile, component, ssp
+  - definition: Contact number by telephone
+- URL found in catalog, profile, component, ssp
+  - definition: URL for web site or Internet presence
+- Description found in catalog, profile, component, ssp
+  - definition: A short textual description
+- Resource found in catalog, profile, component, ssp
+  - definition: A resource associated with the present document.
+- Hash found in catalog, profile, component, ssp
+  - definition: A representation of a cryptographic digest generated over a resource using a hash algorithm.
+- Role found in catalog, profile, component, ssp
+  - definition: Defining a role to be assigned to a party
+- Responsible Party found in catalog, profile, component, ssp
+  - definition: A reference to a set of organizations or persons that have responsibility for performing a referenced role relative to the parent context.
+- Title found in catalog, profile, component, ssp
+  - definition: A title for display and navigation
+- Base64 found in catalog, profile, component, ssp
+  - definition: 
+- Citation found in catalog, profile, component, ssp
+  - definition: A citation to resources, either external or internal (by means of internal cross-reference).
+- Citation target found in catalog, profile, component, ssp
+  - definition: An address for retrieval of a citation
+- Remarks found in catalog, profile, component, ssp
+  - definition: Additional commentary on the parent item.
+- Catalog found in catalog
+  - definition: A collection of controls.
+- Control group found in catalog, profile
+  - definition for group is different between these schemas
+    - catalog: A group of controls, or of groups of controls.
+    - profile: As in catalogs, a group of (selected) controls or of groups of controls
+- Control found in catalog
+  - definition: A structured information object representing a security or privacy control. Each security or privacy control within the Catalog is defined by a distinct control instance.
+- Profile found in profile
+  - definition: Each OSCAL profile is defined by a Profile element
+- Import resource found in profile
+  - definition: An Import element designates a catalog, profile, or other resource to be included (referenced and potentially modified) by this profile.
+- Merge controls found in profile
+  - definition: A Merge element merges controls in resolution.
+- Combination rule found in profile
+  - definition: A Combine element defines whether and how to combine multiple (competing) versions of the same control
+- As is found in profile
+  - definition: An As-is element indicates that the controls should be structured in resolution as they are structured in their source catalogs. It does not contain any elements or attributes.
+- Custom grouping found in profile
+  - definition: A Custom element frames a structure for embedding represented controls in resolution.
+- Modify controls found in profile
+  - definition: Set parameters or amend controls in resolution
+- Include controls found in profile
+  - definition: Specifies which controls to include from the resource (source catalog) being imported
+- Include all found in profile
+  - definition: Include all controls from the imported resource (catalog)
+- Call found in profile
+  - definition: Call a control by its ID
+- Match controls by identifier found in profile
+  - definition: Select controls by (regular expression) match on ID
+- Exclude controls found in profile
+  - definition: Which controls to exclude from the resource (source catalog) being imported
+- Parameter Setting found in profile
+  - definition: A parameter setting, to be propagated to points of insertion
+- Alteration found in profile
+  - definition: An Alter element specifies changes to be made to an included control when a profile is resolved.
+- Removal found in profile
+  - definition: Specifies elements to be removed from a control, in resolution
+- Addition found in profile
+  - definition: Specifies contents to be added into controls, in resolution
+- Description found in component, ssp
+  - definition: A description supporting the parent item.
+- Specific Statement found in component
+  - definition: Describes which specific statements are addressed by a requirement, by pointing to a specific requirement statement within a control.
+- Incorporates Component found in component
+  - definition: TBD
+- Incorporates Capability found in component
+  - definition: TBD
+- Component Definition found in component
+  - definition: TBD
+- Import Component Definition found in component
+  - definition: Loads a component definition from another resource.
+- Component found in component, ssp
+  - definition: A defined component that can be part of an implemented system.
+- Capability found in component
+  - definition: A grouping of other components and/or capabilities.
+- Control Implementation found in component, ssp
+  - definition for control-implementation is different between these schemas
+    - component: Defines how the component or capability supports a set of controls.
+    - ssp: Describes how the system satisfies a set of controls.
+- Can Meet found in component
+  - definition: Defines what sets of controls are supported by the component.
+- Control-based Requirement found in component, ssp
+  - definition for implemented-requirement is different between these schemas
+    - component: TBD
+    - ssp: Describes how the system satisfies an individual control.
+- System Security Plan (SSP) found in ssp
+  - definition: A system security plan, such as those described in NIST SP 800-18
+- Import Profile found in ssp
+  - definition: Used to import the OSCAL profile representing the system's control baseline.
+- System Characteristics found in ssp
+  - definition: Contains the characteristics of the system, such as its name, purpose, and security impact level.
+- System Identification found in ssp
+  - definition: A unique identifier for the system described by this system security plan.
+- System Name (Full) found in ssp
+  - definition: The full name of the system.
+- System Name (Short) found in ssp
+  - definition: A short name for the system, such as an acronym, that is suitable for display in a data table or summary list.
+- Security Sensitivity Level found in ssp
+  - definition: The overall information system sensitivity categorization, such as defined by FIPS-199.
+- System Information found in ssp
+  - definition: Contains details about all information types that are stored, processed, or transmitted by the system, such as privacy information, and those defined in NIST SP 800-60.
+- Information Type found in ssp
+  - definition: Contains details about one information type that is stored, processed, or transmitted by the system, such as privacy information, and those defined in NIST SP 800-60.
+- Information Type Identifier found in ssp
+  - definition: An identifier qualified by the given identification system used, such as NIST SP 800-60.
+- Confidentiality Impact Level found in ssp
+  - definition: The expected level of impact resulting from the unauthorized disclosure of information.
+- Integrity Impact Level found in ssp
+  - definition: The expected level of impact resulting from the unauthorized modification of information.
+- Availability Impact Level found in ssp
+  - definition: The expected level of impact resulting from the disruption of access to or use of information or the information system.
+- Base Level (Confidentiality, Integrity, or Availability) found in ssp
+  - definition: The prescribed base (Confidentiality, Integrity, or Availability) security impact level.
+- Selected Level (Confidentiality, Integrity, or Availability) found in ssp
+  - definition: The selected (Confidentiality, Integrity, or Availability) security impact level.
+- Adjustment Justification found in ssp
+  - definition: If the selected security level is different from the base security level, this contains the justification for the change.
+- Security Impact Level found in ssp
+  - definition: The overall level of expected impact resulting from unauthorized disclosure, modification, or loss of access to information.
+- Security Objective: Confidentiality found in ssp
+  - definition: A target-level of confidentiality for the system, based on the sensitivity of information within the system.
+- Security Objective: Integrity found in ssp
+  - definition: A target-level of integrity for the system, based on the sensitivity of information within the system.
+- Security Objective: Availability found in ssp
+  - definition: A target-level of availability for the system, based on the sensitivity of information within the system.
+- Status found in ssp
+  - definition: Describes the operational status of the system.
+- Leveraged Authorization found in ssp
+  - definition: A description of another authorized system from which this system inherits capabilities that satisfy security requirements. Another term for this concept is a common control provider.
+- System Authorization Date found in ssp
+  - definition: The date this system received its authorization.
+- Authorization Boundary found in ssp
+  - definition: A description of this system's authorization boundary, optionally supplemented by diagrams that illustrate the authorization boundary.
+- Diagram found in ssp
+  - definition: A graphic that provides a visual representation the system, or some aspect of it.
+- Caption found in ssp
+  - definition: A brief caption to annotate the diagram.
+- Network Architecture found in ssp
+  - definition: A description of the system's network architecture, optionally supplemented by diagrams that illustrate the network architecture.
+- Data Flow found in ssp
+  - definition: A description of the logical flow of information within the system and across its boundaries, optionally supplemented by diagrams that illustrate these flows.
+- System Implementation found in ssp
+  - definition: Provides information as to how the system is implemented.
+- System User Class found in ssp
+  - definition: A type of user that interacts with the system based on an associated role.
+- Role Identifier Reference found in ssp
+  - definition: A reference to the roles served by the user.
+- Privilege found in ssp
+  - definition: Identifies a specific system privilege held by the user, along with an associated description and/or rationale for the privilege.
+- Functions Performed found in ssp
+  - definition: Describes a function performed for a given authorized privilege by this user class.
+- Service found in ssp
+  - definition: Information about an individual service within the system.
+- Protocol found in ssp
+  - definition: Information about the protocol used to provide a service.
+- Port Range found in ssp
+  - definition: Where applicable this is the IPv4 port range on which the service operates.
+- Purpose found in ssp
+  - definition: Describes the purpose for the service within the system.
+- Interconnection found in ssp
+  - definition: Details on an individual system interconnection.
+- Remote Interconnected System Name found in ssp
+  - definition: The name of the remote interconnected system.
+- System Inventory found in ssp
+  - definition: A set of inventory-item entries that represent the managed inventory instances of the system.
+- Inventory Item found in ssp
+  - definition: A single managed inventory item within the system.
+- Implemented Component found in ssp
+  - definition: The set of componenets that are implemented in a given system inventory item.
+- Specific Statement found in ssp
+  - definition: Identifies which statements within a control are addressed.
+- Responsible Role found in ssp
+  - definition: A reference to one or more roles with responsibility for performing a function relative to the control.
+- Component Control Implementation found in ssp
+  - definition: Defines how the referenced component implements a set of controls.
+- Set Parameter Value found in ssp
+  - definition: Identifies the parameter that will be filled in by the enclosed value element.
