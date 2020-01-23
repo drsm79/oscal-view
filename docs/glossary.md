@@ -1,259 +1,259 @@
-- **Parameter** (`param`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Parameter** (`param`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: Parameters provide a mechanism for the dynamic assignment of value(s) in a control.
-- **Parameter label** (`label`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Parameter label** (`label`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A placeholder for a missing value, in display.
-- **Parameter description** (`usage`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Parameter description** (`usage`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: Indicates and explains the purpose and use of a parameter
-- **Constraint** (`constraint`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Constraint** (`constraint`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A formal or informal expression of a constraint or test
-- **Guideline** (`guideline`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Guideline** (`guideline`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A prose statement that provides a recommendation for the use of a parameter.
-- **Value** (`value`) is found in [catalog](catalog.html) [profile](profile.html)  & [ssp](ssp.html) 
+- **Value** (`value`) is found in [catalog](catalog.html), [profile](profile.html) & [ssp](ssp.html)
   - definition for **Value** is different between these schemas
     - catalog: Indicates a permissible value for a parameter or property
     - profile: Indicates a permissible value for a parameter or property
     - ssp: The phrase or string that fills-in the parameter and completes the requirement statement.
-- **Selection** (`select`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Selection** (`select`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: Presenting a choice among alternatives
-- **Choice** (`choice`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Choice** (`choice`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A value selection among several such options
-- **Part** (`part`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Part** (`part`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A partition or component of a control or part
-- **Prose** (`prose`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Prose** (`prose`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: Prose permits multiple paragraphs, lists, tables etc.
-- **Publication metadata** (`metadata`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Publication metadata** (`metadata`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Provides information about the publication and availability of the containing document.
-- **Back matter** (`back-matter`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Back matter** (`back-matter`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A collection of citations and resource references.
-- **Link** (`link`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Link** (`link`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A reference to a local or remote resource
-- **Publication Timestamp** (`published`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Publication Timestamp** (`published`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: The date and time this document was published.
-- **Last modified timestamp** (`last-modified`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Last modified timestamp** (`last-modified`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Date and time of last modification.
-- **Document version** (`version`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Document version** (`version`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: The version of the document content.
-- **OSCAL version** (`oscal-version`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **OSCAL version** (`oscal-version`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: OSCAL model version.
-- **Document Identifier** (`doc-id`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Document Identifier** (`doc-id`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A document identifier qualified by an identifier type.
-- **Property** (`prop`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Property** (`prop`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A value with a name, attributed to the containing control, part, or group.
-- **Annotation** (`annotation`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Annotation** (`annotation`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A name/value pair with optional explanatory remarks.
-- **Party (organization or person)** (`party`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Party (organization or person)** (`party`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A responsible entity, either singular (an organization or person) or collective (multiple persons)
-- **Party Reference** (`party-id`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Party Reference** (`party-id`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: References a party defined in metadata.
-- **Person** (`person`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Person** (`person`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A person, with contact information
-- **Organization** (`org`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Organization** (`org`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: An organization or legal entity (not a person), with contact information
-- **Personal Identifier** (`person-id`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Personal Identifier** (`person-id`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: An identifier for a person (such as an ORCID) using a designated scheme.
-- **Organization Identifier** (`org-id`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Organization Identifier** (`org-id`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: An identifier for an organization using a designated scheme.
-- **Resource link** (`rlink`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Resource link** (`rlink`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A pointer to an external copy of a document with optional hash for verification
-- **Person Name** (`person-name`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Person Name** (`person-name`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Full (legal) name of an individual
-- **Organization Name** (`org-name`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Organization Name** (`org-name`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Full (legal) name of an organization
-- **short-name** (`short-name`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **short-name** (`short-name`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A common name, short name or acronym
-- **Address** (`address`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Address** (`address`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A postal address.
-- **Address line** (`addr-line`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Address line** (`addr-line`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A single line of an address.
-- **City** (`city`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **City** (`city`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: City, town or geographical region for mailing address
-- **State** (`state`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **State** (`state`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: State, province or analogous geographical region for mailing address
-- **Postal Code** (`postal-code`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Postal Code** (`postal-code`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Postal or ZIP code for mailing address
-- **Country** (`country`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Country** (`country`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Country for mailing address
-- **Email** (`email`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Email** (`email`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Email address
-- **Telephone** (`phone`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Telephone** (`phone`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Contact number by telephone
-- **URL** (`url`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **URL** (`url`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: URL for web site or Internet presence
-- **Description** (`desc`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Description** (`desc`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A short textual description
-- **Resource** (`resource`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Resource** (`resource`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A resource associated with the present document.
-- **Hash** (`hash`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Hash** (`hash`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A representation of a cryptographic digest generated over a resource using a hash algorithm.
-- **Role** (`role`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Role** (`role`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Defining a role to be assigned to a party
-- **Responsible Party** (`responsible-party`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Responsible Party** (`responsible-party`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A reference to a set of organizations or persons that have responsibility for performing a referenced role relative to the parent context.
-- **Title** (`title`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Title** (`title`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A title for display and navigation
-- **Base64** (`base64`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Base64** (`base64`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: 
-- **Citation** (`citation`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Citation** (`citation`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: A citation to resources, either external or internal (by means of internal cross-reference).
-- **Citation target** (`target`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Citation target** (`target`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: An address for retrieval of a citation
-- **Remarks** (`remarks`) is found in [catalog](catalog.html) [profile](profile.html) [component](component.html)  & [ssp](ssp.html) 
+- **Remarks** (`remarks`) is found in [catalog](catalog.html), [profile](profile.html), [component](component.html) & [ssp](ssp.html)
   - definition: Additional commentary on the parent item.
-- **Catalog** (`catalog`) is found in  & [catalog](catalog.html) 
+- **Catalog** (`catalog`) is found in [catalog](catalog.html)
   - definition: A collection of controls.
-- **Control group** (`group`) is found in [catalog](catalog.html)  & [profile](profile.html) 
+- **Control group** (`group`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition for **Control group** is different between these schemas
     - catalog: A group of controls, or of groups of controls.
     - profile: As in catalogs, a group of (selected) controls or of groups of controls
-- **Control** (`control`) is found in  & [catalog](catalog.html) 
+- **Control** (`control`) is found in [catalog](catalog.html)
   - definition: A structured information object representing a security or privacy control. Each security or privacy control within the Catalog is defined by a distinct control instance.
-- **Profile** (`profile`) is found in  & [profile](profile.html) 
+- **Profile** (`profile`) is found in [profile](profile.html)
   - definition: Each OSCAL profile is defined by a Profile element
-- **Import resource** (`import`) is found in  & [profile](profile.html) 
+- **Import resource** (`import`) is found in [profile](profile.html)
   - definition: An Import element designates a catalog, profile, or other resource to be included (referenced and potentially modified) by this profile.
-- **Merge controls** (`merge`) is found in  & [profile](profile.html) 
+- **Merge controls** (`merge`) is found in [profile](profile.html)
   - definition: A Merge element merges controls in resolution.
-- **Combination rule** (`combine`) is found in  & [profile](profile.html) 
+- **Combination rule** (`combine`) is found in [profile](profile.html)
   - definition: A Combine element defines whether and how to combine multiple (competing) versions of the same control
-- **As is** (`as-is`) is found in  & [profile](profile.html) 
+- **As is** (`as-is`) is found in [profile](profile.html)
   - definition: An As-is element indicates that the controls should be structured in resolution as they are structured in their source catalogs. It does not contain any elements or attributes.
-- **Custom grouping** (`custom`) is found in  & [profile](profile.html) 
+- **Custom grouping** (`custom`) is found in [profile](profile.html)
   - definition: A Custom element frames a structure for embedding represented controls in resolution.
-- **Modify controls** (`modify`) is found in  & [profile](profile.html) 
+- **Modify controls** (`modify`) is found in [profile](profile.html)
   - definition: Set parameters or amend controls in resolution
-- **Include controls** (`include`) is found in  & [profile](profile.html) 
+- **Include controls** (`include`) is found in [profile](profile.html)
   - definition: Specifies which controls to include from the resource (source catalog) being imported
-- **Include all** (`all`) is found in  & [profile](profile.html) 
+- **Include all** (`all`) is found in [profile](profile.html)
   - definition: Include all controls from the imported resource (catalog)
-- **Call** (`call`) is found in  & [profile](profile.html) 
+- **Call** (`call`) is found in [profile](profile.html)
   - definition: Call a control by its ID
-- **Match controls by identifier** (`match`) is found in  & [profile](profile.html) 
+- **Match controls by identifier** (`match`) is found in [profile](profile.html)
   - definition: Select controls by (regular expression) match on ID
-- **Exclude controls** (`exclude`) is found in  & [profile](profile.html) 
+- **Exclude controls** (`exclude`) is found in [profile](profile.html)
   - definition: Which controls to exclude from the resource (source catalog) being imported
-- **Parameter Setting** (`set`) is found in  & [profile](profile.html) 
+- **Parameter Setting** (`set`) is found in [profile](profile.html)
   - definition: A parameter setting, to be propagated to points of insertion
-- **Alteration** (`alter`) is found in  & [profile](profile.html) 
+- **Alteration** (`alter`) is found in [profile](profile.html)
   - definition: An Alter element specifies changes to be made to an included control when a profile is resolved.
-- **Removal** (`remove`) is found in  & [profile](profile.html) 
+- **Removal** (`remove`) is found in [profile](profile.html)
   - definition: Specifies elements to be removed from a control, in resolution
-- **Addition** (`add`) is found in  & [profile](profile.html) 
+- **Addition** (`add`) is found in [profile](profile.html)
   - definition: Specifies contents to be added into controls, in resolution
-- **Description** (`description`) is found in [component](component.html)  & [ssp](ssp.html) 
+- **Description** (`description`) is found in [component](component.html) & [ssp](ssp.html)
   - definition: A description supporting the parent item.
-- **Specific Statement** (`only-statement`) is found in  & [component](component.html) 
+- **Specific Statement** (`only-statement`) is found in [component](component.html)
   - definition: Describes which specific statements are addressed by a requirement, by pointing to a specific requirement statement within a control.
-- **Incorporates Component** (`incorporates-component`) is found in  & [component](component.html) 
+- **Incorporates Component** (`incorporates-component`) is found in [component](component.html)
   - definition: TBD
-- **Incorporates Capability** (`incorporates-capability`) is found in  & [component](component.html) 
+- **Incorporates Capability** (`incorporates-capability`) is found in [component](component.html)
   - definition: TBD
-- **Component Definition** (`component-definition`) is found in  & [component](component.html) 
+- **Component Definition** (`component-definition`) is found in [component](component.html)
   - definition: TBD
-- **Import Component Definition** (`import-component-definition`) is found in  & [component](component.html) 
+- **Import Component Definition** (`import-component-definition`) is found in [component](component.html)
   - definition: Loads a component definition from another resource.
-- **Component** (`component`) is found in [component](component.html)  & [ssp](ssp.html) 
+- **Component** (`component`) is found in [component](component.html) & [ssp](ssp.html)
   - definition: A defined component that can be part of an implemented system.
-- **Capability** (`capability`) is found in  & [component](component.html) 
+- **Capability** (`capability`) is found in [component](component.html)
   - definition: A grouping of other components and/or capabilities.
-- **Control Implementation** (`control-implementation`) is found in [component](component.html)  & [ssp](ssp.html) 
+- **Control Implementation** (`control-implementation`) is found in [component](component.html) & [ssp](ssp.html)
   - definition for **Control Implementation** is different between these schemas
     - component: Defines how the component or capability supports a set of controls.
     - ssp: Describes how the system satisfies a set of controls.
-- **Can Meet** (`can-meet-requirement-set`) is found in  & [component](component.html) 
+- **Can Meet** (`can-meet-requirement-set`) is found in [component](component.html)
   - definition: Defines what sets of controls are supported by the component.
-- **Control-based Requirement** (`implemented-requirement`) is found in [component](component.html)  & [ssp](ssp.html) 
+- **Control-based Requirement** (`implemented-requirement`) is found in [component](component.html) & [ssp](ssp.html)
   - definition for **Control-based Requirement** is different between these schemas
     - component: TBD
     - ssp: Describes how the system satisfies an individual control.
-- **System Security Plan (SSP)** (`system-security-plan`) is found in  & [ssp](ssp.html) 
+- **System Security Plan (SSP)** (`system-security-plan`) is found in [ssp](ssp.html)
   - definition: A system security plan, such as those described in NIST SP 800-18
-- **Import Profile** (`import-profile`) is found in  & [ssp](ssp.html) 
+- **Import Profile** (`import-profile`) is found in [ssp](ssp.html)
   - definition: Used to import the OSCAL profile representing the system's control baseline.
-- **System Characteristics** (`system-characteristics`) is found in  & [ssp](ssp.html) 
+- **System Characteristics** (`system-characteristics`) is found in [ssp](ssp.html)
   - definition: Contains the characteristics of the system, such as its name, purpose, and security impact level.
-- **System Identification** (`system-id`) is found in  & [ssp](ssp.html) 
+- **System Identification** (`system-id`) is found in [ssp](ssp.html)
   - definition: A unique identifier for the system described by this system security plan.
-- **System Name (Full)** (`system-name`) is found in  & [ssp](ssp.html) 
+- **System Name (Full)** (`system-name`) is found in [ssp](ssp.html)
   - definition: The full name of the system.
-- **System Name (Short)** (`system-name-short`) is found in  & [ssp](ssp.html) 
+- **System Name (Short)** (`system-name-short`) is found in [ssp](ssp.html)
   - definition: A short name for the system, such as an acronym, that is suitable for display in a data table or summary list.
-- **Security Sensitivity Level** (`security-sensitivity-level`) is found in  & [ssp](ssp.html) 
+- **Security Sensitivity Level** (`security-sensitivity-level`) is found in [ssp](ssp.html)
   - definition: The overall information system sensitivity categorization, such as defined by FIPS-199.
-- **System Information** (`system-information`) is found in  & [ssp](ssp.html) 
+- **System Information** (`system-information`) is found in [ssp](ssp.html)
   - definition: Contains details about all information types that are stored, processed, or transmitted by the system, such as privacy information, and those defined in NIST SP 800-60.
-- **Information Type** (`information-type`) is found in  & [ssp](ssp.html) 
+- **Information Type** (`information-type`) is found in [ssp](ssp.html)
   - definition: Contains details about one information type that is stored, processed, or transmitted by the system, such as privacy information, and those defined in NIST SP 800-60.
-- **Information Type Identifier** (`information-type-id`) is found in  & [ssp](ssp.html) 
+- **Information Type Identifier** (`information-type-id`) is found in [ssp](ssp.html)
   - definition: An identifier qualified by the given identification system used, such as NIST SP 800-60.
-- **Confidentiality Impact Level** (`confidentiality-impact`) is found in  & [ssp](ssp.html) 
+- **Confidentiality Impact Level** (`confidentiality-impact`) is found in [ssp](ssp.html)
   - definition: The expected level of impact resulting from the unauthorized disclosure of information.
-- **Integrity Impact Level** (`integrity-impact`) is found in  & [ssp](ssp.html) 
+- **Integrity Impact Level** (`integrity-impact`) is found in [ssp](ssp.html)
   - definition: The expected level of impact resulting from the unauthorized modification of information.
-- **Availability Impact Level** (`availability-impact`) is found in  & [ssp](ssp.html) 
+- **Availability Impact Level** (`availability-impact`) is found in [ssp](ssp.html)
   - definition: The expected level of impact resulting from the disruption of access to or use of information or the information system.
-- **Base Level (Confidentiality, Integrity, or Availability)** (`base`) is found in  & [ssp](ssp.html) 
+- **Base Level (Confidentiality, Integrity, or Availability)** (`base`) is found in [ssp](ssp.html)
   - definition: The prescribed base (Confidentiality, Integrity, or Availability) security impact level.
-- **Selected Level (Confidentiality, Integrity, or Availability)** (`selected`) is found in  & [ssp](ssp.html) 
+- **Selected Level (Confidentiality, Integrity, or Availability)** (`selected`) is found in [ssp](ssp.html)
   - definition: The selected (Confidentiality, Integrity, or Availability) security impact level.
-- **Adjustment Justification** (`adjustment-justification`) is found in  & [ssp](ssp.html) 
+- **Adjustment Justification** (`adjustment-justification`) is found in [ssp](ssp.html)
   - definition: If the selected security level is different from the base security level, this contains the justification for the change.
-- **Security Impact Level** (`security-impact-level`) is found in  & [ssp](ssp.html) 
+- **Security Impact Level** (`security-impact-level`) is found in [ssp](ssp.html)
   - definition: The overall level of expected impact resulting from unauthorized disclosure, modification, or loss of access to information.
-- **Security Objective: Confidentiality** (`security-objective-confidentiality`) is found in  & [ssp](ssp.html) 
+- **Security Objective: Confidentiality** (`security-objective-confidentiality`) is found in [ssp](ssp.html)
   - definition: A target-level of confidentiality for the system, based on the sensitivity of information within the system.
-- **Security Objective: Integrity** (`security-objective-integrity`) is found in  & [ssp](ssp.html) 
+- **Security Objective: Integrity** (`security-objective-integrity`) is found in [ssp](ssp.html)
   - definition: A target-level of integrity for the system, based on the sensitivity of information within the system.
-- **Security Objective: Availability** (`security-objective-availability`) is found in  & [ssp](ssp.html) 
+- **Security Objective: Availability** (`security-objective-availability`) is found in [ssp](ssp.html)
   - definition: A target-level of availability for the system, based on the sensitivity of information within the system.
-- **Status** (`status`) is found in  & [ssp](ssp.html) 
+- **Status** (`status`) is found in [ssp](ssp.html)
   - definition: Describes the operational status of the system.
-- **Leveraged Authorization** (`leveraged-authorization`) is found in  & [ssp](ssp.html) 
+- **Leveraged Authorization** (`leveraged-authorization`) is found in [ssp](ssp.html)
   - definition: A description of another authorized system from which this system inherits capabilities that satisfy security requirements. Another term for this concept is a common control provider.
-- **System Authorization Date** (`date-authorized`) is found in  & [ssp](ssp.html) 
+- **System Authorization Date** (`date-authorized`) is found in [ssp](ssp.html)
   - definition: The date this system received its authorization.
-- **Authorization Boundary** (`authorization-boundary`) is found in  & [ssp](ssp.html) 
+- **Authorization Boundary** (`authorization-boundary`) is found in [ssp](ssp.html)
   - definition: A description of this system's authorization boundary, optionally supplemented by diagrams that illustrate the authorization boundary.
-- **Diagram** (`diagram`) is found in  & [ssp](ssp.html) 
+- **Diagram** (`diagram`) is found in [ssp](ssp.html)
   - definition: A graphic that provides a visual representation the system, or some aspect of it.
-- **Caption** (`caption`) is found in  & [ssp](ssp.html) 
+- **Caption** (`caption`) is found in [ssp](ssp.html)
   - definition: A brief caption to annotate the diagram.
-- **Network Architecture** (`network-architecture`) is found in  & [ssp](ssp.html) 
+- **Network Architecture** (`network-architecture`) is found in [ssp](ssp.html)
   - definition: A description of the system's network architecture, optionally supplemented by diagrams that illustrate the network architecture.
-- **Data Flow** (`data-flow`) is found in  & [ssp](ssp.html) 
+- **Data Flow** (`data-flow`) is found in [ssp](ssp.html)
   - definition: A description of the logical flow of information within the system and across its boundaries, optionally supplemented by diagrams that illustrate these flows.
-- **System Implementation** (`system-implementation`) is found in  & [ssp](ssp.html) 
+- **System Implementation** (`system-implementation`) is found in [ssp](ssp.html)
   - definition: Provides information as to how the system is implemented.
-- **System User Class** (`user`) is found in  & [ssp](ssp.html) 
+- **System User Class** (`user`) is found in [ssp](ssp.html)
   - definition: A type of user that interacts with the system based on an associated role.
-- **Role Identifier Reference** (`role-id`) is found in  & [ssp](ssp.html) 
+- **Role Identifier Reference** (`role-id`) is found in [ssp](ssp.html)
   - definition: A reference to the roles served by the user.
-- **Privilege** (`authorized-privilege`) is found in  & [ssp](ssp.html) 
+- **Privilege** (`authorized-privilege`) is found in [ssp](ssp.html)
   - definition: Identifies a specific system privilege held by the user, along with an associated description and/or rationale for the privilege.
-- **Functions Performed** (`function-performed`) is found in  & [ssp](ssp.html) 
+- **Functions Performed** (`function-performed`) is found in [ssp](ssp.html)
   - definition: Describes a function performed for a given authorized privilege by this user class.
-- **Service** (`service`) is found in  & [ssp](ssp.html) 
+- **Service** (`service`) is found in [ssp](ssp.html)
   - definition: Information about an individual service within the system.
-- **Protocol** (`protocol`) is found in  & [ssp](ssp.html) 
+- **Protocol** (`protocol`) is found in [ssp](ssp.html)
   - definition: Information about the protocol used to provide a service.
-- **Port Range** (`port-range`) is found in  & [ssp](ssp.html) 
+- **Port Range** (`port-range`) is found in [ssp](ssp.html)
   - definition: Where applicable this is the IPv4 port range on which the service operates.
-- **Purpose** (`purpose`) is found in  & [ssp](ssp.html) 
+- **Purpose** (`purpose`) is found in [ssp](ssp.html)
   - definition: Describes the purpose for the service within the system.
-- **Interconnection** (`interconnection`) is found in  & [ssp](ssp.html) 
+- **Interconnection** (`interconnection`) is found in [ssp](ssp.html)
   - definition: Details on an individual system interconnection.
-- **Remote Interconnected System Name** (`remote-system-name`) is found in  & [ssp](ssp.html) 
+- **Remote Interconnected System Name** (`remote-system-name`) is found in [ssp](ssp.html)
   - definition: The name of the remote interconnected system.
-- **System Inventory** (`system-inventory`) is found in  & [ssp](ssp.html) 
+- **System Inventory** (`system-inventory`) is found in [ssp](ssp.html)
   - definition: A set of inventory-item entries that represent the managed inventory instances of the system.
-- **Inventory Item** (`inventory-item`) is found in  & [ssp](ssp.html) 
+- **Inventory Item** (`inventory-item`) is found in [ssp](ssp.html)
   - definition: A single managed inventory item within the system.
-- **Implemented Component** (`implemented-component`) is found in  & [ssp](ssp.html) 
+- **Implemented Component** (`implemented-component`) is found in [ssp](ssp.html)
   - definition: The set of componenets that are implemented in a given system inventory item.
-- **Specific Statement** (`statement`) is found in  & [ssp](ssp.html) 
+- **Specific Statement** (`statement`) is found in [ssp](ssp.html)
   - definition: Identifies which statements within a control are addressed.
-- **Responsible Role** (`responsible-role`) is found in  & [ssp](ssp.html) 
+- **Responsible Role** (`responsible-role`) is found in [ssp](ssp.html)
   - definition: A reference to one or more roles with responsibility for performing a function relative to the control.
-- **Component Control Implementation** (`by-component`) is found in  & [ssp](ssp.html) 
+- **Component Control Implementation** (`by-component`) is found in [ssp](ssp.html)
   - definition: Defines how the referenced component implements a set of controls.
-- **Set Parameter Value** (`set-param`) is found in  & [ssp](ssp.html) 
+- **Set Parameter Value** (`set-param`) is found in [ssp](ssp.html)
   - definition: Identifies the parameter that will be filled in by the enclosed value element.

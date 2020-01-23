@@ -71,10 +71,12 @@ def extract_definitions():
 def schema_list_links(schema_list):
     s = ''
     for i, item in enumerate(schema_list, 1):
-        if i == len(schema_list):
+        if i == len(schema_list) and i > 1:
+            s = s.strip(', ')
             s += ' & '
-        s += f'[{item}]({item}.html) '
-    return s
+        s += f'[{item}]({item}.html), '
+
+    return s.strip(', ')
 
 if __name__ == "__main__":
     shutil.rmtree('build')
