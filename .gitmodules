@@ -1,0 +1,6 @@
+[submodule "jsonschemaviewer"]
+	path = jsonschemaviewer
+	url = https://github.com/navneethg/jsonschemaviewer.git
+[submodule "OSCAL"]
+	path = OSCAL
+	url = https://github.com/usnistgov/OSCAL.git
