@@ -20,12 +20,12 @@ def copy_statics():
 def extract_definitions():
     definitions = defaultdict(dict)
     string = ''
-    for s in schemas:
+    for s in sorted(schemas):
         string += f'## {s}\n\n'
         data = json.loads(schemas[s].strip())
         string += f'> {data["$comment"]}\n\n'
 
-        for k, v in data['definitions'].items():
+        for k, v in sorted(data['definitions'].items()):
             if k in definitions[s].keys():
                 print(f'{k} already found')
                 print('title matches:', v['title'] == definitions[s][k]['title'])
@@ -46,7 +46,7 @@ def extract_definitions():
         for t in terms:
             found_in[t].append(schema)
 
-    for term, schema_list in found_in.items():
+    for term, schema_list in sorted(found_in.items()):
         hold = ''
         same = True
         for s in schema_list:
