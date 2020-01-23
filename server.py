@@ -44,6 +44,13 @@ def statics(parts):
     with open(f'jsonschemaviewer/{parts[0]}/{parts[1]}') as f:
         return f.read()
 
+def inject_schema(parts, template_string):
+    # show_me = 'catalog'
+    if parts[0] in schemas:
+        show_me = parts[0]
+        return template_string.replace(to_replace, schemas[show_me])
+
+    return template_string
 
 
 class SchemaHandler(BaseHTTPRequestHandler):
@@ -63,20 +70,13 @@ class SchemaHandler(BaseHTTPRequestHandler):
         if not self.template_string:
             with open('jsonschemaviewer/index.html') as f:
                 template_string = f.read()
-
-        # show_me = 'catalog'
-        if parts[0] in schemas:
-            show_me = parts[0]
-            return template_string.replace(to_replace, schemas[show_me])
-
-        return template_string
+        return inject_schema(parts, template_string)
 
     def send_content(self, ctype, value):
         self.send_response(200)
         self.send_header('Content-type',ctype)
         self.end_headers()
         self.wfile.write(value.encode('utf-8'))
-
 
 
 def run():
