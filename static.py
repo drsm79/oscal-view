@@ -30,7 +30,7 @@ def extract_definitions():
                 print(f'{k} already found')
                 print('title matches:', v['title'] == definitions[s][k]['title'])
                 print('description matches:', v['description'] == definitions[s][k]['description'])
-            string += f"- {v['title']}: {v['description']}\n"
+            string += f"- **{v['title']}**: {v['description']}\n"
             definitions[s][k] = {
                 'title': v['title'],
                 'description': v['description']
@@ -55,9 +55,9 @@ def extract_definitions():
                 print(f'definition for {term} is different for {s}')
             else:
                 hold = definitions[s][term]
-        string += f"- {definitions[s][term]['title']} found in {', '.join(schema_list)}\n"
+        string += f"- **{definitions[s][term]['title']}** (`{term}`) is found in {schema_list_links(schema_list)}\n"
         if not same:
-            string += f"  - definition for {term} is different between these schemas\n"
+            string += f"  - definition for **{definitions[s][term]['title']}** is different between these schemas\n"
             for s in schema_list:
                 string += f"    - {s}: {definitions[s][term]['description']}\n"
         else:
@@ -67,6 +67,14 @@ def extract_definitions():
     with open(f'build/glossary.md', 'w') as f:
         f.write(string)
 
+
+def schema_list_links(schema_list):
+    s = ''
+    for i, item in enumerate(schema_list, 1):
+        if i == len(schema_list):
+            s += ' & '
+        s += f'[{item}]({item}.html) '
+    return s
 
 if __name__ == "__main__":
     shutil.rmtree('build')
