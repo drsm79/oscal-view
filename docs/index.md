@@ -1,7 +1,7 @@
-- [catalog](catalog.html)
-- [profile](profile.html)
-- [component](component.html)
-- [ssp](ssp.html)
+- [catalog](catalog.html) - OSCAL Control Catalog Format
+- [profile](profile.html) - OSCAL Profile Metaschema
+- [component](component.html) - OSCAL Implementation Component Format
+- [ssp](ssp.html) - OSCAL System Security Plan (SSP) Format
 
 ----
 

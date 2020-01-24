@@ -21,7 +21,7 @@ def extract_definitions():
     definitions = defaultdict(dict)
     for s in sorted(schemas):
         data = json.loads(schemas[s].strip())
-        definitions[s]["$comment"] = data["$comment"]
+        definitions[s]["$comment"] = data["$comment"].replace(": JSON Schema", "")
         for k, v in sorted(data['definitions'].items()):
             if k in definitions[s].keys():
                 print(f'{k} already found')
@@ -116,6 +116,21 @@ def build_glossary(definitions, found_in):
     return found_in
 
 
+def make_index(defintions):
+    page = f'''- [catalog](catalog.html) - {definitions["catalog"]["$comment"]}
+- [profile](profile.html) - {definitions["profile"]["$comment"]}
+- [component](component.html) - {definitions["component"]["$comment"]}
+- [ssp](ssp.html) - {definitions["ssp"]["$comment"]}
+
+----
+
+- [objects](terms.html)
+- [glossary](glossary.html)
+- [terms](terms.html)'''
+    with open(f'build/index.md', 'w') as f:
+        f.write(page)
+
+
 def schema_list_links(schema_list):
     s = ''
     for i, item in enumerate(schema_list, 1):
@@ -134,3 +149,4 @@ if __name__ == "__main__":
     build_terms(definitions)
     build_glossary(definitions, found_in)
     build_objects(definitions, found_in)
+    make_index(definitions)

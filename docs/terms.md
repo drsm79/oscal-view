@@ -1,6 +1,6 @@
 ## catalog
 
-> OSCAL Control Catalog Format: JSON Schema
+> OSCAL Control Catalog Format
 
 - **Address line**: A single line of an address.
 - **Address**: A postal address.
@@ -57,7 +57,7 @@
 
 ## component
 
-> OSCAL Implementation Component Format: JSON Schema
+> OSCAL Implementation Component Format
 
 - **Address line**: A single line of an address.
 - **Address**: A postal address.
@@ -112,7 +112,7 @@
 
 ## profile
 
-> OSCAL Profile Metaschema: JSON Schema
+> OSCAL Profile Metaschema
 
 - **Addition**: Specifies contents to be added into controls, in resolution
 - **Address line**: A single line of an address.
@@ -183,7 +183,7 @@
 
 ## ssp
 
-> OSCAL System Security Plan (SSP) Format: JSON Schema
+> OSCAL System Security Plan (SSP) Format
 
 - **Address line**: A single line of an address.
 - **Address**: A postal address.
