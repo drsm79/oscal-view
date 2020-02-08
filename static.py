@@ -53,7 +53,8 @@ def build_terms(definitions):
         for k, v in sorted(terms.items()):
             if k == '$comment':
                 continue
-            string += f"- **{v['title']}**: {v['description']}\n"
+            string += f"- <a id='{s}-{v['title'].lower().replace(' ', '_')}'>"
+            string += f"**{v['title']}**</a>: {v['description']}\n"
             string += f"```json\n{json.dumps(v['schema'], indent=2)}\n```\n"
         string += f'\n'
 
