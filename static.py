@@ -31,7 +31,8 @@ def extract_definitions():
             definitions[s][k] = {
                 'title': v['title'],
                 'description': v['description'],
-                'type': v['type']
+                'type': v['type'],
+                'schema': v
             }
 
     found_in = defaultdict(list)
@@ -53,6 +54,7 @@ def build_terms(definitions):
             if k == '$comment':
                 continue
             string += f"- **{v['title']}**: {v['description']}\n"
+            string += f"```json\n{json.dumps(v['schema'], indent=2)}\n```\n"
         string += f'\n'
 
     with open(f'build/terms.md', 'w') as f:
@@ -124,7 +126,7 @@ def make_index(defintions):
 
 ----
 
-- [objects](terms.html)
+- [objects](objects.html)
 - [glossary](glossary.html)
 - [terms](terms.html)'''
     with open(f'build/index.md', 'w') as f:

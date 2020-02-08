@@ -5,6 +5,6 @@
 
 ----
 
-- [objects](terms.html)
+- [objects](objects.html)
 - [glossary](glossary.html)
 - [terms](terms.html)

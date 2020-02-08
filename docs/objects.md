@@ -33,7 +33,9 @@
 - **Combination rule**(`combine` `type:object`) is found in [profile](profile.html)
   - definition: A Combine element defines whether and how to combine multiple (competing) versions of the same control
 - **Component**(`component` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
-  - definition: A defined component that can be part of an implemented system.
+  - definition for **Component** is different between these schemas
+    - component: A defined component that can be part of an implemented system.
+    - ssp: A defined component that can be part of an implemented system.
 - **Component Definition**(`component-definition` `type:object`) is found in [component](component.html)
   - definition: TBD
 - **Confidentiality Impact Level**(`confidentiality-impact` `type:object`) is found in [ssp](ssp.html)
