@@ -1,5 +1,6 @@
 import argparse
 import http
+import os
 import webbrowser
 import json
 
@@ -8,12 +9,15 @@ from datetime import datetime
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
-
+SCHEMA_BASE_DIR = 'OSCAL/json/schema/'
 schemas = {
-    'catalog': 'OSCAL/json/schema/oscal_catalog_schema.json',
-    'profile': 'OSCAL/json/schema/oscal_profile_schema.json',
-    'component': 'OSCAL/json/schema/oscal_component_schema.json',
-    'ssp': 'OSCAL/json/schema/oscal_ssp_schema.json'
+    'catalog': 'oscal_catalog_schema.json',
+    'profile': 'oscal_profile_schema.json',
+    'component': 'oscal_component_schema.json',
+    'ssp': 'oscal_ssp_schema.json',
+ 	'assessment-plan': 'oscal_assessment-plan_schema.json',
+	'assessment-results': 'oscal_assessment-results_schema.json',
+	'poam': 'oscal_poam_schema.json',
 }
 
 to_replace = '''{
@@ -37,7 +41,7 @@ to_replace = '''{
 
 def populate_schemas():
     for k, v in schemas.items():
-        with open(v) as f:
+        with open(os.path.join(SCHEMA_BASE_DIR, v)) as f:
             schemas[k] = f.read()
 
 def statics(parts):

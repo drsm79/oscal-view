@@ -59,45 +59,29 @@
           "label" : 
           { "$ref" : "#/definitions/label" },
           "descriptions" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/usage" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/usage" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/usage" } },
           "constraints" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/constraint" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/constraint" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/constraint" } },
           "guidance" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/guideline" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/guideline" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/guideline" } },
           "value" : 
           { "$ref" : "#/definitions/value" },
           "select" : 
           { "$ref" : "#/definitions/select" },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] } },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } } },
         "required" : 
         [ "id" ],
         "additionalProperties" : false },
@@ -161,14 +145,10 @@
             "description" : "When selecting, a requirement such as one or more",
             "type" : "string" },
           "alternatives" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/choice" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/choice" },
-                "minItems" : 2 } ] } },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/choice" } } },
         "additionalProperties" : false },
       "choice" : 
       { "title" : "Choice",
@@ -200,34 +180,22 @@
           "title" : 
           { "$ref" : "#/definitions/title" },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
           "prose" : 
           { "$ref" : "#/definitions/prose" },
           "parts" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/part" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/part" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/part" } },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] } },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } } },
         "required" : 
         [ "name" ],
         "additionalProperties" : false },
@@ -252,51 +220,41 @@
           { "$ref" : "#/definitions/version" },
           "oscal-version" : 
           { "$ref" : "#/definitions/oscal-version" },
+          "revision-history" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/revision" } },
           "document-ids" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/doc-id" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/doc-id" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/doc-id" } },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
           "roles" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/role" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/role" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/role" } },
+          "locations" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/location" } },
           "parties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/party" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/party" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/party" } },
           "responsible-parties" : 
           { "type" : "object",
             "minProperties" : 1,
@@ -322,24 +280,40 @@
         "$id" : "#/definitions/back-matter",
         "type" : "object",
         "properties" : 
-        { "citations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/citation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/citation" },
-                "minItems" : 2 } ] },
-          "resources" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/resource" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/resource" },
-                "minItems" : 2 } ] } },
+        { "resources" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/resource" } } },
+        "additionalProperties" : false },
+      "revision" : 
+      { "title" : "Revision History Entry",
+        "description" : "An entry in a sequential list of revisions to the containing document in reverse chronological order (i.e., most recent previous revision first).",
+        "$id" : "#/definitions/revision",
+        "type" : "object",
+        "properties" : 
+        { "title" : 
+          { "$ref" : "#/definitions/title" },
+          "published" : 
+          { "$ref" : "#/definitions/published" },
+          "last-modified" : 
+          { "$ref" : "#/definitions/last-modified" },
+          "version" : 
+          { "$ref" : "#/definitions/version" },
+          "oscal-version" : 
+          { "$ref" : "#/definitions/oscal-version" },
+          "properties" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
+          "links" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
+          "remarks" : 
+          { "$ref" : "#/definitions/remarks" } },
         "additionalProperties" : false },
       "link" : 
       { "title" : "Link",
@@ -411,7 +385,11 @@
         "$id" : "#/definitions/prop",
         "type" : "object",
         "properties" : 
-        { "id" : 
+        { "name" : 
+          { "title" : "Name",
+            "description" : "Identifying the purpose and intended use of the property, part or other object.",
+            "type" : "string" },
+          "id" : 
           { "title" : "Identifier",
             "description" : "Unique identifier of the containing object",
             "type" : "string" },
@@ -422,9 +400,13 @@
           "class" : 
           { "title" : "Class",
             "description" : "Indicating the type or classification of the containing object",
-            "type" : "string" } },
-        "minProperties" : 1,
-        "maxProperties" : 4 },
+            "type" : "string" },
+          "value" : 
+          { "type" : "string" } },
+        "required" : 
+        [ "value",
+          "name" ],
+        "additionalProperties" : false },
       "annotation" : 
       { "title" : "Annotation",
         "description" : "A name/value pair with optional explanatory remarks.",
@@ -452,249 +434,147 @@
         "required" : 
         [ "name" ],
         "additionalProperties" : false },
+      "location" : 
+      { "title" : "Location",
+        "description" : "A location, with associated metadata that can be referenced.",
+        "$id" : "#/definitions/location",
+        "type" : "object",
+        "properties" : 
+        { "uuid" : 
+          { "title" : "Universally Unique Identifier",
+            "description" : "A RFC 4122 version 4 Universally Unique Identifier (UUID) for the containing object.",
+            "type" : "string",
+            "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
+          "title" : 
+          { "$ref" : "#/definitions/title" },
+          "address" : 
+          { "$ref" : "#/definitions/address" },
+          "email-addresses" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/email" } },
+          "telephone-numbers" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/phone" } },
+          "URLs" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/url" } },
+          "properties" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
+          "annotations" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/annotation" } },
+          "links" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
+          "remarks" : 
+          { "$ref" : "#/definitions/remarks" } },
+        "required" : 
+        [ "uuid",
+          "address" ],
+        "additionalProperties" : false },
+      "location-uuid" : 
+      { "title" : "Location Reference",
+        "description" : "References a location defined in metadata.",
+        "$id" : "#/definitions/location-uuid",
+        "type" : "string",
+        "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
       "party" : 
       { "title" : "Party (organization or person)",
         "description" : "A responsible entity, either singular (an organization or person) or collective (multiple persons)",
         "$id" : "#/definitions/party",
         "type" : "object",
         "properties" : 
-        { "id" : 
-          { "title" : "Identifier",
-            "description" : "Unique identifier of the containing object",
-            "type" : "string" },
-          "persons" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/person" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/person" },
-                "minItems" : 2 } ] },
-          "org" : 
-          { "$ref" : "#/definitions/org" },
+        { "uuid" : 
+          { "title" : "Universally Unique Identifier",
+            "description" : "A RFC 4122 version 4 Universally Unique Identifier (UUID) for the containing object.",
+            "type" : "string",
+            "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
+          "type" : 
+          { "title" : "Party Type",
+            "description" : "A category describing the kind of party the object describes.",
+            "type" : "string",
+            "enum" : 
+            [ "person",
+              "organization" ] },
+          "party-name" : 
+          { "$ref" : "#/definitions/party-name" },
+          "short-name" : 
+          { "$ref" : "#/definitions/short-name" },
+          "external-ids" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/external-id" } },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
           "annotations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/annotation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/annotation" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/annotation" } },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
+          "addresses" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/address" } },
+          "email-addresses" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/email" } },
+          "telephone-numbers" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/phone" } },
+          "member-of-organizations" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/member-of-organization" } },
+          "location-uuids" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/location-uuid" } },
           "remarks" : 
           { "$ref" : "#/definitions/remarks" } },
+        "required" : 
+        [ "uuid",
+          "type",
+          "party-name" ],
         "additionalProperties" : false },
-      "party-id" : 
+      "party-uuid" : 
       { "title" : "Party Reference",
         "description" : "References a party defined in metadata.",
-        "$id" : "#/definitions/party-id",
-        "type" : "string" },
-      "person" : 
-      { "title" : "Person",
-        "description" : "A person, with contact information",
-        "$id" : "#/definitions/person",
-        "type" : "object",
-        "properties" : 
-        { "person-name" : 
-          { "$ref" : "#/definitions/person-name" },
-          "short-name" : 
-          { "$ref" : "#/definitions/short-name" },
-          "org-name" : 
-          { "$ref" : "#/definitions/org-name" },
-          "person-ids" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/person-id" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/person-id" },
-                "minItems" : 2 } ] },
-          "organization-ids" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/org-id" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/org-id" },
-                "minItems" : 2 } ] },
-          "addresses" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/address" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/address" },
-                "minItems" : 2 } ] },
-          "email-addresses" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/email" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/email" },
-                "minItems" : 2 } ] },
-          "telephone-numbers" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/phone" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/phone" },
-                "minItems" : 2 } ] },
-          "URLs" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/url" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/url" },
-                "minItems" : 2 } ] },
-          "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
-          "annotations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/annotation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/annotation" },
-                "minItems" : 2 } ] },
-          "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
-          "remarks" : 
-          { "$ref" : "#/definitions/remarks" } },
-        "additionalProperties" : false },
-      "org" : 
-      { "title" : "Organization",
-        "description" : "An organization or legal entity (not a person), with contact information",
-        "$id" : "#/definitions/org",
-        "type" : "object",
-        "properties" : 
-        { "org-name" : 
-          { "$ref" : "#/definitions/org-name" },
-          "short-name" : 
-          { "$ref" : "#/definitions/short-name" },
-          "organization-ids" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/org-id" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/org-id" },
-                "minItems" : 2 } ] },
-          "addresses" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/address" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/address" },
-                "minItems" : 2 } ] },
-          "email-addresses" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/email" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/email" },
-                "minItems" : 2 } ] },
-          "telephone-numbers" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/phone" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/phone" },
-                "minItems" : 2 } ] },
-          "URLs" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/url" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/url" },
-                "minItems" : 2 } ] },
-          "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
-          "annotations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/annotation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/annotation" },
-                "minItems" : 2 } ] },
-          "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
-          "remarks" : 
-          { "$ref" : "#/definitions/remarks" } },
-        "required" : 
-        [ "org-name" ],
-        "additionalProperties" : false },
-      "person-id" : 
+        "$id" : "#/definitions/party-uuid",
+        "type" : "string",
+        "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
+      "external-id" : 
       { "title" : "Personal Identifier",
         "description" : "An identifier for a person (such as an ORCID) using a designated scheme.",
-        "$id" : "#/definitions/person-id",
+        "$id" : "#/definitions/external-id",
         "type" : "object",
         "properties" : 
         { "type" : 
@@ -704,23 +584,15 @@
           "id" : 
           { "type" : "string" } },
         "required" : 
-        [ "id" ],
+        [ "id",
+          "type" ],
         "additionalProperties" : false },
-      "org-id" : 
-      { "title" : "Organization Identifier",
-        "description" : "An identifier for an organization using a designated scheme.",
-        "$id" : "#/definitions/org-id",
-        "type" : "object",
-        "properties" : 
-        { "type" : 
-          { "title" : "Type",
-            "description" : "Indicating the type of identifier, address, email or other data item.",
-            "type" : "string" },
-          "id" : 
-          { "type" : "string" } },
-        "required" : 
-        [ "id" ],
-        "additionalProperties" : false },
+      "member-of-organization" : 
+      { "title" : "Organizational Affiliation",
+        "description" : "Identifies that the containing object is a member of the organization associated with the provided UUID.",
+        "$id" : "#/definitions/member-of-organization",
+        "type" : "string",
+        "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
       "rlink" : 
       { "title" : "Resource link",
         "description" : "A pointer to an external copy of a document with optional hash for verification",
@@ -737,26 +609,17 @@
             "description" : "Describes the media type of the linked resource",
             "type" : "string" },
           "hashes" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/hash" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/hash" },
-                "minItems" : 2 } ] } },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/hash" } } },
         "required" : 
         [ "href" ],
         "additionalProperties" : false },
-      "person-name" : 
-      { "title" : "Person Name",
-        "description" : "Full (legal) name of an individual",
-        "$id" : "#/definitions/person-name",
-        "type" : "string" },
-      "org-name" : 
-      { "title" : "Organization Name",
-        "description" : "Full (legal) name of an organization",
-        "$id" : "#/definitions/org-name",
+      "party-name" : 
+      { "title" : "Party Name",
+        "description" : "The full (legal) name of the party.",
+        "$id" : "#/definitions/party-name",
         "type" : "string" },
       "short-name" : 
       { "title" : "short-name",
@@ -773,14 +636,10 @@
           { "description" : "Indicates the type of address.",
             "type" : "string" },
           "postal-address" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/addr-line" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/addr-line" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/addr-line" } },
           "city" : 
           { "$ref" : "#/definitions/city" },
           "state" : 
@@ -847,42 +706,76 @@
         "description" : "A short textual description",
         "$id" : "#/definitions/desc",
         "type" : "string" },
+      "text" : 
+      { "title" : "Text",
+        "description" : "A line of textual content whose semantic is determined by the context of use.",
+        "$id" : "#/definitions/text",
+        "type" : "string" },
+      "biblio" : 
+      { "title" : "Bibliographic Definition",
+        "description" : "A container in which a set of bibliographic information can included. The model of this information is undefined by OSCAL.",
+        "$id" : "#/definitions/biblio",
+        "type" : "object",
+        "additionalProperties" : false },
       "resource" : 
       { "title" : "Resource",
-        "description" : "A resource associated with the present document.",
+        "description" : "A resource associated with the present document, which may be a pointer to other data or a citation.",
         "$id" : "#/definitions/resource",
         "type" : "object",
         "properties" : 
-        { "id" : 
-          { "title" : "Identifier",
-            "description" : "Unique identifier of the containing object",
-            "type" : "string" },
+        { "uuid" : 
+          { "title" : "Universally Unique Identifier",
+            "description" : "A RFC 4122 version 4 Universally Unique Identifier (UUID) for the containing object.",
+            "type" : "string",
+            "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
+          "title" : 
+          { "$ref" : "#/definitions/title" },
           "desc" : 
           { "$ref" : "#/definitions/desc" },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
+          "document-ids" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/doc-id" } },
+          "citation" : 
+          { "$ref" : "#/definitions/citation" },
           "rlinks" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/rlink" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/rlink" },
-                "minItems" : 2 } ] },
-          "base64" : 
-          { "$ref" : "#/definitions/base64" },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/rlink" } },
+          "attachments" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/base64" } },
           "remarks" : 
           { "$ref" : "#/definitions/remarks" } },
         "required" : 
-        [ "id" ],
+        [ "uuid" ],
+        "additionalProperties" : false },
+      "citation" : 
+      { "title" : "Citation",
+        "description" : "A citation consisting of end note text and optional structured bibliographic data.",
+        "$id" : "#/definitions/citation",
+        "type" : "object",
+        "properties" : 
+        { "text" : 
+          { "$ref" : "#/definitions/text" },
+          "properties" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
+          "biblio" : 
+          { "$ref" : "#/definitions/biblio" } },
+        "required" : 
+        [ "text" ],
         "additionalProperties" : false },
       "hash" : 
       { "title" : "Hash",
@@ -917,32 +810,20 @@
           "desc" : 
           { "$ref" : "#/definitions/desc" },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
           "annotations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/annotation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/annotation" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/annotation" } },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
           "remarks" : 
           { "$ref" : "#/definitions/remarks" } },
         "required" : 
@@ -955,46 +836,30 @@
         "$id" : "#/definitions/responsible-party",
         "type" : "object",
         "properties" : 
-        { "party-ids" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/party-id" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/party-id" },
-                "minItems" : 2 } ] },
+        { "party-uuids" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/party-uuid" } },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
           "annotations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/annotation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/annotation" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/annotation" } },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
           "remarks" : 
           { "$ref" : "#/definitions/remarks" } },
         "required" : 
-        [ "party-ids" ],
+        [ "party-uuids" ],
         "additionalProperties" : false },
       "title" : 
       { "title" : "Title",
@@ -1021,55 +886,6 @@
         "required" : 
         [ "value" ],
         "additionalProperties" : false },
-      "citation" : 
-      { "title" : "Citation",
-        "description" : "A citation to resources, either external or internal (by means of internal cross-reference).",
-        "$id" : "#/definitions/citation",
-        "type" : "object",
-        "properties" : 
-        { "id" : 
-          { "title" : "Identifier",
-            "description" : "Unique identifier of the containing object",
-            "type" : "string" },
-          "targets" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/target" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/target" },
-                "minItems" : 2 } ] },
-          "title" : 
-          { "$ref" : "#/definitions/title" },
-          "desc" : 
-          { "$ref" : "#/definitions/desc" },
-          "document-ids" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/doc-id" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/doc-id" },
-                "minItems" : 2 } ] },
-          "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] } },
-        "required" : 
-        [ "id" ],
-        "additionalProperties" : false },
-      "target" : 
-      { "title" : "Citation target",
-        "description" : "An address for retrieval of a citation",
-        "$id" : "#/definitions/target",
-        "type" : "string" },
       "remarks" : 
       { "title" : "Remarks",
         "description" : "Additional commentary on the parent item.",
@@ -1081,34 +897,32 @@
         "$id" : "#/definitions/catalog",
         "type" : "object",
         "properties" : 
-        { "id" : 
-          { "title" : "Identifier",
-            "description" : "Unique identifier of the containing object",
-            "type" : "string" },
+        { "uuid" : 
+          { "title" : "Universally Unique Identifier",
+            "description" : "A RFC 4122 version 4 Universally Unique Identifier (UUID) for the containing object.",
+            "type" : "string",
+            "pattern" : "^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$" },
           "metadata" : 
           { "$ref" : "#/definitions/metadata" },
-          "groups" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/group" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/group" },
-                "minItems" : 2 } ] },
+          "parameters" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/param" } },
           "controls" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/control" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/control" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/control" } },
+          "groups" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/group" } },
           "back-matter" : 
           { "$ref" : "#/definitions/back-matter" } },
         "required" : 
-        [ "id",
+        [ "uuid",
           "metadata" ],
         "additionalProperties" : false },
       "group" : 
@@ -1128,50 +942,40 @@
           "title" : 
           { "$ref" : "#/definitions/title" },
           "parameters" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/param" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/param" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/param" } },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
+          "annotations" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/annotation" } },
+          "links" : 
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
           "parts" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/part" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/part" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/part" } },
           "groups" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/group" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/group" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/group" } },
           "controls" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/control" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/control" },
-                "minItems" : 2 } ] } },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/control" } } },
         "required" : 
         [ "title" ],
         "additionalProperties" : false },
@@ -1192,66 +996,44 @@
           "title" : 
           { "$ref" : "#/definitions/title" },
           "parameters" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/param" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/param" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/param" } },
           "properties" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/prop" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/prop" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/prop" } },
           "annotations" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/annotation" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/annotation" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/annotation" } },
           "links" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/link" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/link" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/link" } },
           "parts" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/part" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/part" },
-                "minItems" : 2 } ] },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/part" } },
           "controls" : 
-          { "anyOf" : 
-            [ 
-              { "$ref" : "#/definitions/control" },
-              
-              { "type" : "array",
-                "items" : 
-                { "$ref" : "#/definitions/control" },
-                "minItems" : 2 } ] } },
+          { "type" : "array",
+            "minItems" : 1,
+            "items" : 
+            { "$ref" : "#/definitions/control" } } },
         "required" : 
         [ "id",
           "title" ],
         "additionalProperties" : false } },
     "properties" : 
     { "catalog" : 
-      { "$ref" : "#/definitions/catalog" } } }</div>
+      { "$ref" : "#/definitions/catalog" } },
+    "required" : 
+    [ "catalog" ] }</div>
     
     <!-- JSV -->
     <div id="main-body"></div>

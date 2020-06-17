@@ -1,37 +1,56 @@
+- **Activity ID**(`activity-uuid` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Links the task to a defined activity.
 - **Addition**(`add` `type:object`) is found in [profile](profile.html)
   - definition: Specifies contents to be added into controls, in resolution
-- **Address line**(`addr-line` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Address line**(`addr-line` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A single line of an address.
-- **Address**(`address` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Address**(`address` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A postal address.
 - **Adjustment Justification**(`adjustment-justification` `type:string`) is found in [ssp](ssp.html)
   - definition: If the selected security level is different from the base security level, this contains the justification for the change.
-- **Include all**(`all` `type:object`) is found in [profile](profile.html)
-  - definition: Include all controls from the imported resource (catalog)
+- **Include all**(`all` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [profile](profile.html)
+  - definition for **Include all** is different between these schemas
+    - assessment-plan: A key word to indicate all
+    - assessment-results: A key word to indicate all
+    - profile: Include all controls from the imported resource (catalog)
 - **Alteration**(`alter` `type:object`) is found in [profile](profile.html)
   - definition: An Alter element specifies changes to be made to an included control when a profile is resolved.
-- **Annotation**(`annotation` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Annotation**(`annotation` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A name/value pair with optional explanatory remarks.
 - **As is**(`as-is` `type:boolean`) is found in [profile](profile.html)
   - definition: An As-is element indicates that the controls should be structured in resolution as they are structured in their source catalogs. It does not contain any elements or attributes.
+- **Assessment Activities**(`assessment-activities` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the assessment activities and schedule. In the assessment plan, these are planned activities. In the assessment results, these are the actual activities performed.
+- **Assessment Method**(`assessment-method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies a method for assessing the satisfaction of this objective.
+- **Security Assessment Plan (SAP)**(`assessment-plan` `type:object`) is found in [assessment-plan](assessment-plan.html)
+  - definition: An assessment plan, such as those provided by a FedRAMP assessor.
+- **Security Assessment Results (SAR)**(`assessment-results` `type:object`) is found in [assessment-results](assessment-results.html)
+  - definition: Security assessment results, such as those provided by a FedRAMP assessor in the FedRAMP Security Assessment Report.
+- **Subject of Assessment**(`assessment-subjects` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies system elements being assessed, such as components, inventory items, and locations. In the assessment plan, this identifies the planned assessment subject. In the assessment results this is the actual assessment subject, and reflects any changes from the plan.
+- **Assessor**(`assessor` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies an individual who gathered the evidence resulting in the observation or risk identification.
+- **Assessment Assets**(`assets` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the assets used to perform this assessment, such as the assessment team, scanning tools, and assumptions.
 - **Authorization Boundary**(`authorization-boundary` `type:object`) is found in [ssp](ssp.html)
   - definition: A description of this system's authorization boundary, optionally supplemented by diagrams that illustrate the authorization boundary.
-- **Privilege**(`authorized-privilege` `type:object`) is found in [ssp](ssp.html)
+- **Privilege**(`authorized-privilege` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html)
   - definition: Identifies a specific system privilege held by the user, along with an associated description and/or rationale for the privilege.
 - **Availability Impact Level**(`availability-impact` `type:object`) is found in [ssp](ssp.html)
   - definition: The expected level of impact resulting from the disruption of access to or use of information or the information system.
-- **Back matter**(`back-matter` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Back matter**(`back-matter` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A collection of citations and resource references.
 - **Base Level (Confidentiality, Integrity, or Availability)**(`base` `type:string`) is found in [ssp](ssp.html)
   - definition: The prescribed base (Confidentiality, Integrity, or Availability) security impact level.
-- **Base64**(`base64` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Base64**(`base64` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: 
+- **Bibliographic Definition**(`biblio` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: A container in which a set of bibliographic information can included. The model of this information is undefined by OSCAL.
 - **Component Control Implementation**(`by-component` `type:object`) is found in [ssp](ssp.html)
   - definition: Defines how the referenced component implements a set of controls.
 - **Call**(`call` `type:object`) is found in [profile](profile.html)
   - definition: Call a control by its ID
-- **Can Meet**(`can-meet-requirement-set` `type:object`) is found in [component](component.html)
-  - definition: Defines what sets of controls are supported by the component.
 - **Capability**(`capability` `type:object`) is found in [component](component.html)
   - definition: A grouping of other components and/or capabilities.
 - **Caption**(`caption` `type:string`) is found in [ssp](ssp.html)
@@ -40,18 +59,25 @@
   - definition: A collection of controls.
 - **Choice**(`choice` `type:string`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A value selection among several such options
-- **Citation**(`citation` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: A citation to resources, either external or internal (by means of internal cross-reference).
-- **City**(`city` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Citation**(`citation` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: A citation consisting of end note text and optional structured bibliographic data.
+- **City**(`city` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: City, town or geographical region for mailing address
+- **Closer Actions**(`closure-actions` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes the actions taken that resulted in the closure of the identified risk.
 - **Combination rule**(`combine` `type:object`) is found in [profile](profile.html)
   - definition: A Combine element defines whether and how to combine multiple (competing) versions of the same control
-- **Component**(`component` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
+- **Compare To**(`compare-to` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Typically used in when copying content from the assessment plan to the assessment results. The uuid should be changed in the assessment results file, and the compare-to field should be set to the original assessment plan uuid value. This enables the plan and results to be compared later to identify what changed between the two.
+- **Component**(`component` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html)
   - definition for **Component** is different between these schemas
+    - assessment-plan: A defined component that can be part of an implemented system.
+    - assessment-results: A defined component that can be part of an implemented system.
     - component: A defined component that can be part of an implemented system.
+    - poam: A defined component that can be part of an implemented system.
     - ssp: A defined component that can be part of an implemented system.
 - **Component Definition**(`component-definition` `type:object`) is found in [component](component.html)
-  - definition: TBD
+  - definition: A collection of component descriptions, which may optionally be grouped by capability.
 - **Confidentiality Impact Level**(`confidentiality-impact` `type:object`) is found in [ssp](ssp.html)
   - definition: The expected level of impact resulting from the unauthorized disclosure of information.
 - **Constraint**(`constraint` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
@@ -62,7 +88,11 @@
   - definition for **Control Implementation** is different between these schemas
     - component: Defines how the component or capability supports a set of controls.
     - ssp: Describes how the system satisfies a set of controls.
-- **Country**(`country` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Control Objectives**(`control-objectives` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the control objectives of the assessment. In the assessment plan, these are the planned objectives. In the assessment results, these are the actual objectives, and reflects any changes from the plan.
+- **Assessed Controls**(`controls` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the controls being assessed. In the assessment plan, these are the planned controls. In the assessment results, these are the actual controls, and reflects any changes from the plan.
+- **Country**(`country` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Country for mailing address
 - **Custom grouping**(`custom` `type:object`) is found in [profile](profile.html)
   - definition: A Custom element frames a structure for embedding represented controls in resolution.
@@ -70,19 +100,35 @@
   - definition: A description of the logical flow of information within the system and across its boundaries, optionally supplemented by diagrams that illustrate these flows.
 - **System Authorization Date**(`date-authorized` `type:string`) is found in [ssp](ssp.html)
   - definition: The date this system received its authorization.
-- **Description**(`desc` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Date/Time Stamp**(`date-time-stamp` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Date/time stamp identifying when the information was collected.
+- **Description**(`desc` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A short textual description
-- **Description**(`description` `type:string`) is found in [component](component.html) & [ssp](ssp.html)
+- **Description**(`description` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: A description supporting the parent item.
 - **Diagram**(`diagram` `type:object`) is found in [ssp](ssp.html)
   - definition: A graphic that provides a visual representation the system, or some aspect of it.
-- **Document Identifier**(`doc-id` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Document Identifier**(`doc-id` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A document identifier qualified by an identifier type.
-- **Email**(`email` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Email**(`email` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Email address
+- **End**(`end` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the end of a task.
 - **Exclude controls**(`exclude` `type:object`) is found in [profile](profile.html)
   - definition: Which controls to exclude from the resource (source catalog) being imported
-- **Functions Performed**(`function-performed` `type:string`) is found in [ssp](ssp.html)
+- **Included Activity**(`exclude-activity` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an activity explicitly excluded from the assessment. In the assessment plan, this clarifies activities that are out-of-scope or prohibited. In the assessment results, this could be used to explicitly identify an activity that was planned, but not performed.
+- **Exclude Control**(`exclude-control` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an individual control to exclude.
+- **Exclude Objective**(`exclude-objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an individual control objective to exclude.
+- **Excluded Assessment Subject**(`exclude-subject` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies what is explicitly excluded from this assessment. Used to remove a subset of items from groups of explicitly included items. Also used to explicitly clarify off-limit items, such as hosts to avoid scanning.
+- **Personal Identifier**(`external-id` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: An identifier for a person (such as an ORCID) using a designated scheme.
+- **Finding**(`finding` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes an individual finding.
+- **Functions Performed**(`function-performed` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html)
   - definition: Describes a function performed for a given authorized privilege by this user class.
 - **Control group**(`group` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition for **Control group** is different between these schemas
@@ -90,24 +136,38 @@
     - profile: As in catalogs, a group of (selected) controls or of groups of controls
 - **Guideline**(`guideline` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A prose statement that provides a recommendation for the use of a parameter.
-- **Hash**(`hash` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Hash**(`hash` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A representation of a cryptographic digest generated over a resource using a hash algorithm.
-- **Implemented Component**(`implemented-component` `type:object`) is found in [ssp](ssp.html)
+- **Implementation Statement UUID**(`implementation-statement-uuid` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the implementation statement in the SSP to which this finding is related.
+- **Implementation Status**(`implementation-status` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the implementation status of the control or control objective.
+- **Implemented Component**(`implemented-component` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: The set of componenets that are implemented in a given system inventory item.
 - **Control-based Requirement**(`implemented-requirement` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
   - definition for **Control-based Requirement** is different between these schemas
-    - component: TBD
+    - component: Describes how the component implements an individual control.
     - ssp: Describes how the system satisfies an individual control.
 - **Import resource**(`import` `type:object`) is found in [profile](profile.html)
   - definition: An Import element designates a catalog, profile, or other resource to be included (referenced and potentially modified) by this profile.
+- **Import Assessment Plan**(`import-ap` `type:object`) is found in [assessment-results](assessment-results.html)
+  - definition: Used by assessment-results to import information about the original plan for assessing the system.
 - **Import Component Definition**(`import-component-definition` `type:object`) is found in [component](component.html)
   - definition: Loads a component definition from another resource.
 - **Import Profile**(`import-profile` `type:object`) is found in [ssp](ssp.html)
   - definition: Used to import the OSCAL profile representing the system's control baseline.
+- **Import System Security Plan**(`import-ssp` `type:object`) is found in [assessment-plan](assessment-plan.html) & [poam](poam.html)
+  - definition: Used by the assessment plan and POA&M to import information about the system.
 - **Include controls**(`include` `type:object`) is found in [profile](profile.html)
   - definition: Specifies which controls to include from the resource (source catalog) being imported
-- **Incorporates Capability**(`incorporates-capability` `type:object`) is found in [component](component.html)
-  - definition: TBD
+- **Included Activity**(`include-activity` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an assessment activity. In the assessment plan, this is an intended/in-scope activity. In the assessment results, this identifies an activity that was actually performed.
+- **Include Control**(`include-control` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an individual control to include.
+- **Include Objective**(`include-objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an individual control objective to include.
+- **Included Assessment Subject**(`include-subject` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies exactly what will be the focus of this assessment. Anything not explicitly defined is out-of-scope.
 - **Incorporates Component**(`incorporates-component` `type:object`) is found in [component](component.html)
   - definition: TBD
 - **Information Type**(`information-type` `type:object`) is found in [ssp](ssp.html)
@@ -116,88 +176,131 @@
   - definition: An identifier qualified by the given identification system used, such as NIST SP 800-60.
 - **Integrity Impact Level**(`integrity-impact` `type:object`) is found in [ssp](ssp.html)
   - definition: The expected level of impact resulting from the unauthorized modification of information.
-- **Interconnection**(`interconnection` `type:object`) is found in [ssp](ssp.html)
-  - definition: Details on an individual system interconnection.
-- **Inventory Item**(`inventory-item` `type:object`) is found in [ssp](ssp.html)
+- **Inventory Item**(`inventory-item` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: A single managed inventory item within the system.
 - **Parameter label**(`label` `type:string`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: A placeholder for a missing value, in display.
-- **Last modified timestamp**(`last-modified` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Last modified timestamp**(`last-modified` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Date and time of last modification.
 - **Leveraged Authorization**(`leveraged-authorization` `type:object`) is found in [ssp](ssp.html)
   - definition: A description of another authorized system from which this system inherits capabilities that satisfy security requirements. Another term for this concept is a common control provider.
-- **Link**(`link` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Link**(`link` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A reference to a local or remote resource
+- **Local Definitions**(`local-definitions` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition for **Local Definitions** is different between these schemas
+    - assessment-plan: Allows control objectives, users, components, and inventory-items to be defined within the assessment plan or assessment results for circumstances where they are not appropriately defined in the SSP. NOTE: Use the assessment plan or assessment results metadata to define additional locations if needed.
+    - assessment-results: Allows control objectives, users, components, and inventory-items to be defined within the assessment plan or assessment results for circumstances where they are not appropriately defined in the SSP. NOTE: Use the assessment plan or assessment results metadata to define additional locations if needed.
+    - poam: Allows components, and inventory-items to be defined within the POA&M for circumstances where no OSCAL-based SSP exists, or is not delivered with the POA&M.
+- **Location**(`location` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: A location, with associated metadata that can be referenced.
+- **Location Reference**(`location-uuid` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: References a location defined in metadata.
 - **Match controls by identifier**(`match` `type:object`) is found in [profile](profile.html)
   - definition: Select controls by (regular expression) match on ID
+- **Organizational Affiliation**(`member-of-organization` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: Identifies that the containing object is a member of the organization associated with the provided UUID.
 - **Merge controls**(`merge` `type:object`) is found in [profile](profile.html)
   - definition: A Merge element merges controls in resolution.
-- **Publication metadata**(`metadata` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Publication metadata**(`metadata` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Provides information about the publication and availability of the containing document.
+- **Assessment Method**(`method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: A local definition of a control objective. Uses catalog syntax for control objective and assessment actions.
+- **Mitigating Factor**(`mitigating-factor` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes a mitigating factor with an optional link to an implementation statement in the SSP.
 - **Modify controls**(`modify` `type:object`) is found in [profile](profile.html)
   - definition: Set parameters or amend controls in resolution
 - **Network Architecture**(`network-architecture` `type:object`) is found in [ssp](ssp.html)
   - definition: A description of the system's network architecture, optionally supplemented by diagrams that illustrate the network architecture.
-- **Specific Statement**(`only-statement` `type:object`) is found in [component](component.html)
-  - definition: Describes which specific statements are addressed by a requirement, by pointing to a specific requirement statement within a control.
-- **Organization**(`org` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: An organization or legal entity (not a person), with contact information
-- **Organization Identifier**(`org-id` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: An identifier for an organization using a designated scheme.
-- **Organization Name**(`org-name` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: Full (legal) name of an organization
-- **OSCAL version**(`oscal-version` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Control Objective**(`objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: A local definition of a control objective. Uses catalog syntax for control objective and assessment actions.
+- **Implementation Status**(`objective-status` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Captures an assessors conclusions as to whether an objective is fully satisfied.
+- **Objectives of Assessment**(`objectives` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the controls and control being assessed and their control objectives. In the assessment plans, these are the planned controls and objectives. In the assessment results, these are the actual controls and objectives, and reflects any changes from the plan.
+- **Objective**(`observation` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes an individual observation.
+- **Observation Method**(`observation-method` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies how the observation was made.
+- **Observation Type**(`observation-type` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the nature of the observation. More than one may be used to further qualify and enable filtering.
+- **Origin**(`origin` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the tool or activity that resulted in the observation.
+- **Assessment Origination**(`origination` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the origination of network-based assessment activities, such as the IP address of the tool performing assessment scans.
+- **OSCAL version**(`oscal-version` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: OSCAL model version.
 - **Parameter**(`param` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: Parameters provide a mechanism for the dynamic assignment of value(s) in a control.
-- **Part**(`part` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Part**(`part` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html) & [profile](profile.html)
   - definition: A partition or component of a control or part
-- **Party (organization or person)**(`party` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Party (organization or person)**(`party` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A responsible entity, either singular (an organization or person) or collective (multiple persons)
-- **Party Reference**(`party-id` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Party Name**(`party-name` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: The full (legal) name of the party.
+- **Party Reference**(`party-uuid` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: References a party defined in metadata.
-- **Person**(`person` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: A person, with contact information
-- **Personal Identifier**(`person-id` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: An identifier for a person (such as an ORCID) using a designated scheme.
-- **Person Name**(`person-name` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: Full (legal) name of an individual
-- **Telephone**(`phone` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Telephone**(`phone` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Contact number by telephone
-- **Port Range**(`port-range` `type:object`) is found in [ssp](ssp.html)
+- **Plan of Action and Milestones (POA&M)**(`plan-of-action-and-milestones` `type:object`) is found in [poam](poam.html)
+  - definition: A plan of action and milestones, such as those required by FedRAMP.
+- **Port Range**(`port-range` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: Where applicable this is the IPv4 port range on which the service operates.
-- **Postal Code**(`postal-code` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Postal Code**(`postal-code` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Postal or ZIP code for mailing address
 - **Profile**(`profile` `type:object`) is found in [profile](profile.html)
   - definition: Each OSCAL profile is defined by a Profile element
-- **Property**(`prop` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Property**(`prop` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A value with a name, attributed to the containing control, part, or group.
-- **Prose**(`prose` `type:string`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Prose**(`prose` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html) & [profile](profile.html)
   - definition: Prose permits multiple paragraphs, lists, tables etc.
-- **Protocol**(`protocol` `type:object`) is found in [ssp](ssp.html)
+- **Protocol**(`protocol` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: Information about the protocol used to provide a service.
-- **Publication Timestamp**(`published` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Publication Timestamp**(`published` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: The date and time this document was published.
-- **Purpose**(`purpose` `type:string`) is found in [ssp](ssp.html)
+- **Purpose**(`purpose` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: Describes the purpose for the service within the system.
-- **Remarks**(`remarks` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Relevant Evidence**(`relevant-evidence` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Links this observation to relevant evidence.
+- **Remarks**(`remarks` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Additional commentary on the parent item.
-- **Remote Interconnected System Name**(`remote-system-name` `type:string`) is found in [ssp](ssp.html)
-  - definition: The name of the remote interconnected system.
+- **Remediation**(`remediation` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes either recommendation or an actual plan for remediating the risk.
+- **Remediation Origin**(`remediation-origin` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Points to the source of the remediation recommendation or plan
+- **Remediation Tracking**(`remediation-tracking` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: A log of events and actions taken towards the remediation of the associated risk.
 - **Removal**(`remove` `type:object`) is found in [profile](profile.html)
   - definition: Specifies elements to be removed from a control, in resolution
-- **Resource**(`resource` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: A resource associated with the present document.
-- **Responsible Party**(`responsible-party` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Required**(`required` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies something required to achieve remediation.
+- **Resource**(`resource` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: A resource associated with the present document, which may be a pointer to other data or a citation.
+- **Responsible Party**(`responsible-party` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A reference to a set of organizations or persons that have responsibility for performing a referenced role relative to the parent context.
-- **Responsible Role**(`responsible-role` `type:object`) is found in [ssp](ssp.html)
+- **Responsible Role**(`responsible-role` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: A reference to one or more roles with responsibility for performing a function relative to the control.
-- **Resource link**(`rlink` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Result**(`result` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: A brief indication as to whether the objective is satisfied or not.
+- **Assessment Results**(`results` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Used by the assessment results and POA&M. In the assessment results, this identifies all of the assessment observations and findings, initial and residual risks, deviations, and disposition. In the POA&M, this identifies initial and residual risks, deviations, and disposition.
+- **Revision History Entry**(`revision` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: An entry in a sequential list of revisions to the containing document in reverse chronological order (i.e., most recent previous revision first).
+- **Identified Risk**(`risk` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: An identified risk.
+- **Risk Metric**(`risk-metric` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: An individual risk metric from a specified system.
+- **Risk Statement**(`risk-statement` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes the risk.
+- **Status**(`risk-status` `type:string`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Describes the status of the associated risk.
+- **Resource link**(`rlink` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A pointer to an external copy of a document with optional hash for verification
-- **Role**(`role` `type:object`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Role**(`role` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: Defining a role to be assigned to a party
-- **Role Identifier Reference**(`role-id` `type:string`) is found in [ssp](ssp.html)
+- **Role Identifier Reference**(`role-id` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: A reference to the roles served by the user.
+- **Schedule**(`schedule` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the schedule for the assessment activities.
 - **Security Impact Level**(`security-impact-level` `type:object`) is found in [ssp](ssp.html)
   - definition: The overall level of expected impact resulting from unauthorized disclosure, modification, or loss of access to information.
 - **Security Objective: Availability**(`security-objective-availability` `type:string`) is found in [ssp](ssp.html)
@@ -212,23 +315,30 @@
   - definition: Presenting a choice among alternatives
 - **Selected Level (Confidentiality, Integrity, or Availability)**(`selected` `type:string`) is found in [ssp](ssp.html)
   - definition: The selected (Confidentiality, Integrity, or Availability) security impact level.
-- **Service**(`service` `type:object`) is found in [ssp](ssp.html)
-  - definition: Information about an individual service within the system.
-- **Parameter Setting**(`set` `type:object`) is found in [profile](profile.html)
-  - definition: A parameter setting, to be propagated to points of insertion
-- **Set Parameter Value**(`set-param` `type:object`) is found in [ssp](ssp.html)
-  - definition: Identifies the parameter that will be filled in by the enclosed value element.
-- **short-name**(`short-name` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Sequence Number**(`sequence` `type:integer`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies the sequence number for the test step.
+- **Set Parameter Value**(`set-parameter` `type:object`) is found in [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition for **Set Parameter Value** is different between these schemas
+    - component: Identifies the parameter that will be filled in by the enclosed value element.
+    - profile: A parameter setting, to be propagated to points of insertion
+    - ssp: Identifies the parameter that will be filled in by the enclosed value element.
+- **short-name**(`short-name` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A common name, short name or acronym
-- **State**(`state` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Start**(`start` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies the start of a task.
+- **State**(`state` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: State, province or analogous geographical region for mailing address
-- **Specific Statement**(`statement` `type:object`) is found in [ssp](ssp.html)
-  - definition: Identifies which statements within a control are addressed.
-- **Status**(`status` `type:object`) is found in [ssp](ssp.html)
+- **Specific Statement**(`statement` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
+  - definition for **Specific Statement** is different between these schemas
+    - component: Identifies which statements within a control are addressed.
+    - ssp: Identifies which statements within a control are addressed.
+- **Status**(`status` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
   - definition: Describes the operational status of the system.
+- **Identifies the Subject**(`subject-reference` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: A pointer to a resource based on its ID. Use type to indicate whether the identified resource is a component, inventory item, location, user, or something else.
 - **System Characteristics**(`system-characteristics` `type:object`) is found in [ssp](ssp.html)
   - definition: Contains the characteristics of the system, such as its name, purpose, and security impact level.
-- **System Identification**(`system-id` `type:object`) is found in [ssp](ssp.html)
+- **System Identification**(`system-id` `type:object`) is found in [poam](poam.html) & [ssp](ssp.html)
   - definition: A unique identifier for the system described by this system security plan.
 - **System Implementation**(`system-implementation` `type:object`) is found in [ssp](ssp.html)
   - definition: Provides information as to how the system is implemented.
@@ -242,20 +352,33 @@
   - definition: A short name for the system, such as an acronym, that is suitable for display in a data table or summary list.
 - **System Security Plan (SSP)**(`system-security-plan` `type:object`) is found in [ssp](ssp.html)
   - definition: A system security plan, such as those described in NIST SP 800-18
-- **Citation target**(`target` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
-  - definition: An address for retrieval of a citation
-- **Title**(`title` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Task**(`task` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Identifies an individual task.
+- **Test Method**(`test-method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an individual test method.
+- **Test Steps**(`test-step` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: Identifies an individual test step.
+- **Text**(`text` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+  - definition: A line of textual content whose semantic is determined by the context of use.
+- **Threat ID**(`threat-id` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: A pointer, by ID, to an externally-defined threat.
+- **Title**(`title` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: A title for display and navigation
-- **URL**(`url` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Assessment Assets**(`tools` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+  - definition: The technology tools used by the assessor to perform the assessment, such as vulnerability scanners. In the assessment plan these are the intended tools. In the assessment results, these are the actual tools used, including any differences from the assessment plan.
+- **Tracking Entry**(`tracking-entry` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+  - definition: Individual remediation tracking entry, which logs an event or action taken towards the remediation of the associated risk.
+- **URL**(`url` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: URL for web site or Internet presence
 - **Parameter description**(`usage` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
   - definition: Indicates and explains the purpose and use of a parameter
-- **System User Class**(`user` `type:object`) is found in [ssp](ssp.html)
+- **System User Class**(`user` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html)
   - definition: A type of user that interacts with the system based on an associated role.
-- **Value**(`value` `type:string`) is found in [catalog](catalog.html), [profile](profile.html) & [ssp](ssp.html)
+- **Value**(`value` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
   - definition for **Value** is different between these schemas
     - catalog: Indicates a permissible value for a parameter or property
+    - component: The phrase or string that fills-in the parameter and completes the requirement statement.
     - profile: Indicates a permissible value for a parameter or property
     - ssp: The phrase or string that fills-in the parameter and completes the requirement statement.
-- **Document version**(`version` `type:string`) is found in [catalog](catalog.html), [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Document version**(`version` `type:string`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
   - definition: The version of the document content.

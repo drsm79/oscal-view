@@ -124,6 +124,9 @@ def make_index(defintions):
 - [profile](profile.html) - {definitions["profile"]["$comment"]}
 - [component](component.html) - {definitions["component"]["$comment"]}
 - [ssp](ssp.html) - {definitions["ssp"]["$comment"]}
+- [assessment-plan](assessment-plan.html) - {definitions["assessment-plan"]["$comment"]}
+- [assessment-results](assessment-results.html) - {definitions["assessment-results"]["$comment"]}
+- [poam](poam.html) - {definitions["poam"]["$comment"]}
 
 ----
 
