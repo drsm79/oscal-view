@@ -1,276 +1,276 @@
-- **Addition**(`add` `type:object`) is found in [profile](profile.html)
+- **Addition**(`add` `type:object`) is found in [profile](profile.html) <a id='add' href='#add'>§</a>
   - definition: Specifies contents to be added into controls, in resolution
-- **Address**(`address` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Address**(`address` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='address' href='#address'>§</a>
   - definition: A postal address.
-- **Include all**(`all` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [profile](profile.html)
+- **Include all**(`all` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [profile](profile.html) <a id='all' href='#all'>§</a>
   - definition for **Include all** is different between these schemas
     - assessment-plan: A key word to indicate all
     - assessment-results: A key word to indicate all
     - profile: Include all controls from the imported resource (catalog)
-- **Alteration**(`alter` `type:object`) is found in [profile](profile.html)
+- **Alteration**(`alter` `type:object`) is found in [profile](profile.html) <a id='alter' href='#alter'>§</a>
   - definition: An Alter element specifies changes to be made to an included control when a profile is resolved.
-- **Annotation**(`annotation` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Annotation**(`annotation` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='annotation' href='#annotation'>§</a>
   - definition: A name/value pair with optional explanatory remarks.
-- **Assessment Activities**(`assessment-activities` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessment Activities**(`assessment-activities` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='assessment-activities' href='#assessment-activities'>§</a>
   - definition: Identifies the assessment activities and schedule. In the assessment plan, these are planned activities. In the assessment results, these are the actual activities performed.
-- **Assessment Method**(`assessment-method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessment Method**(`assessment-method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='assessment-method' href='#assessment-method'>§</a>
   - definition: Identifies a method for assessing the satisfaction of this objective.
-- **Security Assessment Plan (SAP)**(`assessment-plan` `type:object`) is found in [assessment-plan](assessment-plan.html)
+- **Security Assessment Plan (SAP)**(`assessment-plan` `type:object`) is found in [assessment-plan](assessment-plan.html) <a id='assessment-plan' href='#assessment-plan'>§</a>
   - definition: An assessment plan, such as those provided by a FedRAMP assessor.
-- **Security Assessment Results (SAR)**(`assessment-results` `type:object`) is found in [assessment-results](assessment-results.html)
+- **Security Assessment Results (SAR)**(`assessment-results` `type:object`) is found in [assessment-results](assessment-results.html) <a id='assessment-results' href='#assessment-results'>§</a>
   - definition: Security assessment results, such as those provided by a FedRAMP assessor in the FedRAMP Security Assessment Report.
-- **Subject of Assessment**(`assessment-subjects` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Subject of Assessment**(`assessment-subjects` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='assessment-subjects' href='#assessment-subjects'>§</a>
   - definition: Identifies system elements being assessed, such as components, inventory items, and locations. In the assessment plan, this identifies the planned assessment subject. In the assessment results this is the actual assessment subject, and reflects any changes from the plan.
-- **Assessor**(`assessor` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Assessor**(`assessor` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='assessor' href='#assessor'>§</a>
   - definition: Identifies an individual who gathered the evidence resulting in the observation or risk identification.
-- **Assessment Assets**(`assets` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessment Assets**(`assets` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='assets' href='#assets'>§</a>
   - definition: Identifies the assets used to perform this assessment, such as the assessment team, scanning tools, and assumptions.
-- **Authorization Boundary**(`authorization-boundary` `type:object`) is found in [ssp](ssp.html)
+- **Authorization Boundary**(`authorization-boundary` `type:object`) is found in [ssp](ssp.html) <a id='authorization-boundary' href='#authorization-boundary'>§</a>
   - definition: A description of this system's authorization boundary, optionally supplemented by diagrams that illustrate the authorization boundary.
-- **Privilege**(`authorized-privilege` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html)
+- **Privilege**(`authorized-privilege` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html) <a id='authorized-privilege' href='#authorized-privilege'>§</a>
   - definition: Identifies a specific system privilege held by the user, along with an associated description and/or rationale for the privilege.
-- **Availability Impact Level**(`availability-impact` `type:object`) is found in [ssp](ssp.html)
+- **Availability Impact Level**(`availability-impact` `type:object`) is found in [ssp](ssp.html) <a id='availability-impact' href='#availability-impact'>§</a>
   - definition: The expected level of impact resulting from the disruption of access to or use of information or the information system.
-- **Back matter**(`back-matter` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Back matter**(`back-matter` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='back-matter' href='#back-matter'>§</a>
   - definition: A collection of citations and resource references.
-- **Base64**(`base64` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Base64**(`base64` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='base64' href='#base64'>§</a>
   - definition: 
-- **Bibliographic Definition**(`biblio` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Bibliographic Definition**(`biblio` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='biblio' href='#biblio'>§</a>
   - definition: A container in which a set of bibliographic information can included. The model of this information is undefined by OSCAL.
-- **Component Control Implementation**(`by-component` `type:object`) is found in [ssp](ssp.html)
+- **Component Control Implementation**(`by-component` `type:object`) is found in [ssp](ssp.html) <a id='by-component' href='#by-component'>§</a>
   - definition: Defines how the referenced component implements a set of controls.
-- **Call**(`call` `type:object`) is found in [profile](profile.html)
+- **Call**(`call` `type:object`) is found in [profile](profile.html) <a id='call' href='#call'>§</a>
   - definition: Call a control by its ID
-- **Capability**(`capability` `type:object`) is found in [component](component.html)
+- **Capability**(`capability` `type:object`) is found in [component](component.html) <a id='capability' href='#capability'>§</a>
   - definition: A grouping of other components and/or capabilities.
-- **Catalog**(`catalog` `type:object`) is found in [catalog](catalog.html)
+- **Catalog**(`catalog` `type:object`) is found in [catalog](catalog.html) <a id='catalog' href='#catalog'>§</a>
   - definition: A collection of controls.
-- **Citation**(`citation` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Citation**(`citation` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='citation' href='#citation'>§</a>
   - definition: A citation consisting of end note text and optional structured bibliographic data.
-- **Combination rule**(`combine` `type:object`) is found in [profile](profile.html)
+- **Combination rule**(`combine` `type:object`) is found in [profile](profile.html) <a id='combine' href='#combine'>§</a>
   - definition: A Combine element defines whether and how to combine multiple (competing) versions of the same control
-- **Component**(`component` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html)
+- **Component**(`component` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html) <a id='component' href='#component'>§</a>
   - definition for **Component** is different between these schemas
     - assessment-plan: A defined component that can be part of an implemented system.
     - assessment-results: A defined component that can be part of an implemented system.
     - component: A defined component that can be part of an implemented system.
     - poam: A defined component that can be part of an implemented system.
     - ssp: A defined component that can be part of an implemented system.
-- **Component Definition**(`component-definition` `type:object`) is found in [component](component.html)
+- **Component Definition**(`component-definition` `type:object`) is found in [component](component.html) <a id='component-definition' href='#component-definition'>§</a>
   - definition: A collection of component descriptions, which may optionally be grouped by capability.
-- **Confidentiality Impact Level**(`confidentiality-impact` `type:object`) is found in [ssp](ssp.html)
+- **Confidentiality Impact Level**(`confidentiality-impact` `type:object`) is found in [ssp](ssp.html) <a id='confidentiality-impact' href='#confidentiality-impact'>§</a>
   - definition: The expected level of impact resulting from the unauthorized disclosure of information.
-- **Constraint**(`constraint` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Constraint**(`constraint` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html) <a id='constraint' href='#constraint'>§</a>
   - definition: A formal or informal expression of a constraint or test
-- **Control**(`control` `type:object`) is found in [catalog](catalog.html)
+- **Control**(`control` `type:object`) is found in [catalog](catalog.html) <a id='control' href='#control'>§</a>
   - definition: A structured information object representing a security or privacy control. Each security or privacy control within the Catalog is defined by a distinct control instance.
-- **Control Implementation**(`control-implementation` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
+- **Control Implementation**(`control-implementation` `type:object`) is found in [component](component.html) & [ssp](ssp.html) <a id='control-implementation' href='#control-implementation'>§</a>
   - definition for **Control Implementation** is different between these schemas
     - component: Defines how the component or capability supports a set of controls.
     - ssp: Describes how the system satisfies a set of controls.
-- **Control Objectives**(`control-objectives` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Control Objectives**(`control-objectives` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='control-objectives' href='#control-objectives'>§</a>
   - definition: Identifies the control objectives of the assessment. In the assessment plan, these are the planned objectives. In the assessment results, these are the actual objectives, and reflects any changes from the plan.
-- **Assessed Controls**(`controls` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessed Controls**(`controls` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='controls' href='#controls'>§</a>
   - definition: Identifies the controls being assessed. In the assessment plan, these are the planned controls. In the assessment results, these are the actual controls, and reflects any changes from the plan.
-- **Custom grouping**(`custom` `type:object`) is found in [profile](profile.html)
+- **Custom grouping**(`custom` `type:object`) is found in [profile](profile.html) <a id='custom' href='#custom'>§</a>
   - definition: A Custom element frames a structure for embedding represented controls in resolution.
-- **Data Flow**(`data-flow` `type:object`) is found in [ssp](ssp.html)
+- **Data Flow**(`data-flow` `type:object`) is found in [ssp](ssp.html) <a id='data-flow' href='#data-flow'>§</a>
   - definition: A description of the logical flow of information within the system and across its boundaries, optionally supplemented by diagrams that illustrate these flows.
-- **Diagram**(`diagram` `type:object`) is found in [ssp](ssp.html)
+- **Diagram**(`diagram` `type:object`) is found in [ssp](ssp.html) <a id='diagram' href='#diagram'>§</a>
   - definition: A graphic that provides a visual representation the system, or some aspect of it.
-- **Document Identifier**(`doc-id` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Document Identifier**(`doc-id` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='doc-id' href='#doc-id'>§</a>
   - definition: A document identifier qualified by an identifier type.
-- **Exclude controls**(`exclude` `type:object`) is found in [profile](profile.html)
+- **Exclude controls**(`exclude` `type:object`) is found in [profile](profile.html) <a id='exclude' href='#exclude'>§</a>
   - definition: Which controls to exclude from the resource (source catalog) being imported
-- **Included Activity**(`exclude-activity` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Included Activity**(`exclude-activity` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='exclude-activity' href='#exclude-activity'>§</a>
   - definition: Identifies an activity explicitly excluded from the assessment. In the assessment plan, this clarifies activities that are out-of-scope or prohibited. In the assessment results, this could be used to explicitly identify an activity that was planned, but not performed.
-- **Exclude Control**(`exclude-control` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Exclude Control**(`exclude-control` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='exclude-control' href='#exclude-control'>§</a>
   - definition: Identifies an individual control to exclude.
-- **Exclude Objective**(`exclude-objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Exclude Objective**(`exclude-objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='exclude-objective' href='#exclude-objective'>§</a>
   - definition: Identifies an individual control objective to exclude.
-- **Excluded Assessment Subject**(`exclude-subject` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Excluded Assessment Subject**(`exclude-subject` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='exclude-subject' href='#exclude-subject'>§</a>
   - definition: Identifies what is explicitly excluded from this assessment. Used to remove a subset of items from groups of explicitly included items. Also used to explicitly clarify off-limit items, such as hosts to avoid scanning.
-- **Personal Identifier**(`external-id` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Personal Identifier**(`external-id` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='external-id' href='#external-id'>§</a>
   - definition: An identifier for a person (such as an ORCID) using a designated scheme.
-- **Finding**(`finding` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Finding**(`finding` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='finding' href='#finding'>§</a>
   - definition: Describes an individual finding.
-- **Control group**(`group` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Control group**(`group` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html) <a id='group' href='#group'>§</a>
   - definition for **Control group** is different between these schemas
     - catalog: A group of controls, or of groups of controls.
     - profile: As in catalogs, a group of (selected) controls or of groups of controls
-- **Guideline**(`guideline` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Guideline**(`guideline` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html) <a id='guideline' href='#guideline'>§</a>
   - definition: A prose statement that provides a recommendation for the use of a parameter.
-- **Hash**(`hash` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Hash**(`hash` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='hash' href='#hash'>§</a>
   - definition: A representation of a cryptographic digest generated over a resource using a hash algorithm.
-- **Implementation Status**(`implementation-status` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Implementation Status**(`implementation-status` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='implementation-status' href='#implementation-status'>§</a>
   - definition: Identifies the implementation status of the control or control objective.
-- **Implemented Component**(`implemented-component` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
+- **Implemented Component**(`implemented-component` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html) <a id='implemented-component' href='#implemented-component'>§</a>
   - definition: The set of componenets that are implemented in a given system inventory item.
-- **Control-based Requirement**(`implemented-requirement` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
+- **Control-based Requirement**(`implemented-requirement` `type:object`) is found in [component](component.html) & [ssp](ssp.html) <a id='implemented-requirement' href='#implemented-requirement'>§</a>
   - definition for **Control-based Requirement** is different between these schemas
     - component: Describes how the component implements an individual control.
     - ssp: Describes how the system satisfies an individual control.
-- **Import resource**(`import` `type:object`) is found in [profile](profile.html)
+- **Import resource**(`import` `type:object`) is found in [profile](profile.html) <a id='import' href='#import'>§</a>
   - definition: An Import element designates a catalog, profile, or other resource to be included (referenced and potentially modified) by this profile.
-- **Import Assessment Plan**(`import-ap` `type:object`) is found in [assessment-results](assessment-results.html)
+- **Import Assessment Plan**(`import-ap` `type:object`) is found in [assessment-results](assessment-results.html) <a id='import-ap' href='#import-ap'>§</a>
   - definition: Used by assessment-results to import information about the original plan for assessing the system.
-- **Import Component Definition**(`import-component-definition` `type:object`) is found in [component](component.html)
+- **Import Component Definition**(`import-component-definition` `type:object`) is found in [component](component.html) <a id='import-component-definition' href='#import-component-definition'>§</a>
   - definition: Loads a component definition from another resource.
-- **Import Profile**(`import-profile` `type:object`) is found in [ssp](ssp.html)
+- **Import Profile**(`import-profile` `type:object`) is found in [ssp](ssp.html) <a id='import-profile' href='#import-profile'>§</a>
   - definition: Used to import the OSCAL profile representing the system's control baseline.
-- **Import System Security Plan**(`import-ssp` `type:object`) is found in [assessment-plan](assessment-plan.html) & [poam](poam.html)
+- **Import System Security Plan**(`import-ssp` `type:object`) is found in [assessment-plan](assessment-plan.html) & [poam](poam.html) <a id='import-ssp' href='#import-ssp'>§</a>
   - definition: Used by the assessment plan and POA&M to import information about the system.
-- **Include controls**(`include` `type:object`) is found in [profile](profile.html)
+- **Include controls**(`include` `type:object`) is found in [profile](profile.html) <a id='include' href='#include'>§</a>
   - definition: Specifies which controls to include from the resource (source catalog) being imported
-- **Included Activity**(`include-activity` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Included Activity**(`include-activity` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='include-activity' href='#include-activity'>§</a>
   - definition: Identifies an assessment activity. In the assessment plan, this is an intended/in-scope activity. In the assessment results, this identifies an activity that was actually performed.
-- **Include Control**(`include-control` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Include Control**(`include-control` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='include-control' href='#include-control'>§</a>
   - definition: Identifies an individual control to include.
-- **Include Objective**(`include-objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Include Objective**(`include-objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='include-objective' href='#include-objective'>§</a>
   - definition: Identifies an individual control objective to include.
-- **Included Assessment Subject**(`include-subject` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Included Assessment Subject**(`include-subject` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='include-subject' href='#include-subject'>§</a>
   - definition: Identifies exactly what will be the focus of this assessment. Anything not explicitly defined is out-of-scope.
-- **Incorporates Component**(`incorporates-component` `type:object`) is found in [component](component.html)
+- **Incorporates Component**(`incorporates-component` `type:object`) is found in [component](component.html) <a id='incorporates-component' href='#incorporates-component'>§</a>
   - definition: TBD
-- **Information Type**(`information-type` `type:object`) is found in [ssp](ssp.html)
+- **Information Type**(`information-type` `type:object`) is found in [ssp](ssp.html) <a id='information-type' href='#information-type'>§</a>
   - definition: Contains details about one information type that is stored, processed, or transmitted by the system, such as privacy information, and those defined in NIST SP 800-60.
-- **Information Type Identifier**(`information-type-id` `type:object`) is found in [ssp](ssp.html)
+- **Information Type Identifier**(`information-type-id` `type:object`) is found in [ssp](ssp.html) <a id='information-type-id' href='#information-type-id'>§</a>
   - definition: An identifier qualified by the given identification system used, such as NIST SP 800-60.
-- **Integrity Impact Level**(`integrity-impact` `type:object`) is found in [ssp](ssp.html)
+- **Integrity Impact Level**(`integrity-impact` `type:object`) is found in [ssp](ssp.html) <a id='integrity-impact' href='#integrity-impact'>§</a>
   - definition: The expected level of impact resulting from the unauthorized modification of information.
-- **Inventory Item**(`inventory-item` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
+- **Inventory Item**(`inventory-item` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html) <a id='inventory-item' href='#inventory-item'>§</a>
   - definition: A single managed inventory item within the system.
-- **Leveraged Authorization**(`leveraged-authorization` `type:object`) is found in [ssp](ssp.html)
+- **Leveraged Authorization**(`leveraged-authorization` `type:object`) is found in [ssp](ssp.html) <a id='leveraged-authorization' href='#leveraged-authorization'>§</a>
   - definition: A description of another authorized system from which this system inherits capabilities that satisfy security requirements. Another term for this concept is a common control provider.
-- **Link**(`link` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Link**(`link` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='link' href='#link'>§</a>
   - definition: A reference to a local or remote resource
-- **Local Definitions**(`local-definitions` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Local Definitions**(`local-definitions` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html) <a id='local-definitions' href='#local-definitions'>§</a>
   - definition for **Local Definitions** is different between these schemas
     - assessment-plan: Allows control objectives, users, components, and inventory-items to be defined within the assessment plan or assessment results for circumstances where they are not appropriately defined in the SSP. NOTE: Use the assessment plan or assessment results metadata to define additional locations if needed.
     - assessment-results: Allows control objectives, users, components, and inventory-items to be defined within the assessment plan or assessment results for circumstances where they are not appropriately defined in the SSP. NOTE: Use the assessment plan or assessment results metadata to define additional locations if needed.
     - poam: Allows components, and inventory-items to be defined within the POA&M for circumstances where no OSCAL-based SSP exists, or is not delivered with the POA&M.
-- **Location**(`location` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Location**(`location` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='location' href='#location'>§</a>
   - definition: A location, with associated metadata that can be referenced.
-- **Match controls by identifier**(`match` `type:object`) is found in [profile](profile.html)
+- **Match controls by identifier**(`match` `type:object`) is found in [profile](profile.html) <a id='match' href='#match'>§</a>
   - definition: Select controls by (regular expression) match on ID
-- **Merge controls**(`merge` `type:object`) is found in [profile](profile.html)
+- **Merge controls**(`merge` `type:object`) is found in [profile](profile.html) <a id='merge' href='#merge'>§</a>
   - definition: A Merge element merges controls in resolution.
-- **Publication metadata**(`metadata` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Publication metadata**(`metadata` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='metadata' href='#metadata'>§</a>
   - definition: Provides information about the publication and availability of the containing document.
-- **Assessment Method**(`method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessment Method**(`method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='method' href='#method'>§</a>
   - definition: A local definition of a control objective. Uses catalog syntax for control objective and assessment actions.
-- **Mitigating Factor**(`mitigating-factor` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Mitigating Factor**(`mitigating-factor` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='mitigating-factor' href='#mitigating-factor'>§</a>
   - definition: Describes a mitigating factor with an optional link to an implementation statement in the SSP.
-- **Modify controls**(`modify` `type:object`) is found in [profile](profile.html)
+- **Modify controls**(`modify` `type:object`) is found in [profile](profile.html) <a id='modify' href='#modify'>§</a>
   - definition: Set parameters or amend controls in resolution
-- **Network Architecture**(`network-architecture` `type:object`) is found in [ssp](ssp.html)
+- **Network Architecture**(`network-architecture` `type:object`) is found in [ssp](ssp.html) <a id='network-architecture' href='#network-architecture'>§</a>
   - definition: A description of the system's network architecture, optionally supplemented by diagrams that illustrate the network architecture.
-- **Control Objective**(`objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Control Objective**(`objective` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='objective' href='#objective'>§</a>
   - definition: A local definition of a control objective. Uses catalog syntax for control objective and assessment actions.
-- **Implementation Status**(`objective-status` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Implementation Status**(`objective-status` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='objective-status' href='#objective-status'>§</a>
   - definition: Captures an assessors conclusions as to whether an objective is fully satisfied.
-- **Objectives of Assessment**(`objectives` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Objectives of Assessment**(`objectives` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='objectives' href='#objectives'>§</a>
   - definition: Identifies the controls and control being assessed and their control objectives. In the assessment plans, these are the planned controls and objectives. In the assessment results, these are the actual controls and objectives, and reflects any changes from the plan.
-- **Objective**(`observation` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Objective**(`observation` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='observation' href='#observation'>§</a>
   - definition: Describes an individual observation.
-- **Origin**(`origin` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Origin**(`origin` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='origin' href='#origin'>§</a>
   - definition: Identifies the tool or activity that resulted in the observation.
-- **Assessment Origination**(`origination` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessment Origination**(`origination` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='origination' href='#origination'>§</a>
   - definition: Identifies the origination of network-based assessment activities, such as the IP address of the tool performing assessment scans.
-- **Parameter**(`param` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Parameter**(`param` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html) <a id='param' href='#param'>§</a>
   - definition: Parameters provide a mechanism for the dynamic assignment of value(s) in a control.
-- **Part**(`part` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html) & [profile](profile.html)
+- **Part**(`part` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html) & [profile](profile.html) <a id='part' href='#part'>§</a>
   - definition: A partition or component of a control or part
-- **Party (organization or person)**(`party` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Party (organization or person)**(`party` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='party' href='#party'>§</a>
   - definition: A responsible entity, either singular (an organization or person) or collective (multiple persons)
-- **Telephone**(`phone` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Telephone**(`phone` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='phone' href='#phone'>§</a>
   - definition: Contact number by telephone
-- **Plan of Action and Milestones (POA&M)**(`plan-of-action-and-milestones` `type:object`) is found in [poam](poam.html)
+- **Plan of Action and Milestones (POA&M)**(`plan-of-action-and-milestones` `type:object`) is found in [poam](poam.html) <a id='plan-of-action-and-milestones' href='#plan-of-action-and-milestones'>§</a>
   - definition: A plan of action and milestones, such as those required by FedRAMP.
-- **Port Range**(`port-range` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
+- **Port Range**(`port-range` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html) <a id='port-range' href='#port-range'>§</a>
   - definition: Where applicable this is the IPv4 port range on which the service operates.
-- **Profile**(`profile` `type:object`) is found in [profile](profile.html)
+- **Profile**(`profile` `type:object`) is found in [profile](profile.html) <a id='profile' href='#profile'>§</a>
   - definition: Each OSCAL profile is defined by a Profile element
-- **Property**(`prop` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Property**(`prop` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='prop' href='#prop'>§</a>
   - definition: A value with a name, attributed to the containing control, part, or group.
-- **Protocol**(`protocol` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
+- **Protocol**(`protocol` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html) <a id='protocol' href='#protocol'>§</a>
   - definition: Information about the protocol used to provide a service.
-- **Relevant Evidence**(`relevant-evidence` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Relevant Evidence**(`relevant-evidence` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='relevant-evidence' href='#relevant-evidence'>§</a>
   - definition: Links this observation to relevant evidence.
-- **Remediation**(`remediation` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Remediation**(`remediation` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='remediation' href='#remediation'>§</a>
   - definition: Describes either recommendation or an actual plan for remediating the risk.
-- **Remediation Origin**(`remediation-origin` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Remediation Origin**(`remediation-origin` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='remediation-origin' href='#remediation-origin'>§</a>
   - definition: Points to the source of the remediation recommendation or plan
-- **Remediation Tracking**(`remediation-tracking` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Remediation Tracking**(`remediation-tracking` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='remediation-tracking' href='#remediation-tracking'>§</a>
   - definition: A log of events and actions taken towards the remediation of the associated risk.
-- **Removal**(`remove` `type:object`) is found in [profile](profile.html)
+- **Removal**(`remove` `type:object`) is found in [profile](profile.html) <a id='remove' href='#remove'>§</a>
   - definition: Specifies elements to be removed from a control, in resolution
-- **Required**(`required` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Required**(`required` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='required' href='#required'>§</a>
   - definition: Identifies something required to achieve remediation.
-- **Resource**(`resource` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Resource**(`resource` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='resource' href='#resource'>§</a>
   - definition: A resource associated with the present document, which may be a pointer to other data or a citation.
-- **Responsible Party**(`responsible-party` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Responsible Party**(`responsible-party` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='responsible-party' href='#responsible-party'>§</a>
   - definition: A reference to a set of organizations or persons that have responsibility for performing a referenced role relative to the parent context.
-- **Responsible Role**(`responsible-role` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html)
+- **Responsible Role**(`responsible-role` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [component](component.html), [poam](poam.html) & [ssp](ssp.html) <a id='responsible-role' href='#responsible-role'>§</a>
   - definition: A reference to one or more roles with responsibility for performing a function relative to the control.
-- **Result**(`result` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Result**(`result` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='result' href='#result'>§</a>
   - definition: A brief indication as to whether the objective is satisfied or not.
-- **Assessment Results**(`results` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Assessment Results**(`results` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='results' href='#results'>§</a>
   - definition: Used by the assessment results and POA&M. In the assessment results, this identifies all of the assessment observations and findings, initial and residual risks, deviations, and disposition. In the POA&M, this identifies initial and residual risks, deviations, and disposition.
-- **Revision History Entry**(`revision` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Revision History Entry**(`revision` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='revision' href='#revision'>§</a>
   - definition: An entry in a sequential list of revisions to the containing document in reverse chronological order (i.e., most recent previous revision first).
-- **Identified Risk**(`risk` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Identified Risk**(`risk` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='risk' href='#risk'>§</a>
   - definition: An identified risk.
-- **Risk Metric**(`risk-metric` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Risk Metric**(`risk-metric` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='risk-metric' href='#risk-metric'>§</a>
   - definition: An individual risk metric from a specified system.
-- **Resource link**(`rlink` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Resource link**(`rlink` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='rlink' href='#rlink'>§</a>
   - definition: A pointer to an external copy of a document with optional hash for verification
-- **Role**(`role` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html)
+- **Role**(`role` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [catalog](catalog.html), [component](component.html), [poam](poam.html), [profile](profile.html) & [ssp](ssp.html) <a id='role' href='#role'>§</a>
   - definition: Defining a role to be assigned to a party
-- **Schedule**(`schedule` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Schedule**(`schedule` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html) <a id='schedule' href='#schedule'>§</a>
   - definition: Identifies the schedule for the assessment activities.
-- **Security Impact Level**(`security-impact-level` `type:object`) is found in [ssp](ssp.html)
+- **Security Impact Level**(`security-impact-level` `type:object`) is found in [ssp](ssp.html) <a id='security-impact-level' href='#security-impact-level'>§</a>
   - definition: The overall level of expected impact resulting from unauthorized disclosure, modification, or loss of access to information.
-- **Selection**(`select` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Selection**(`select` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html) <a id='select' href='#select'>§</a>
   - definition: Presenting a choice among alternatives
-- **Set Parameter Value**(`set-parameter` `type:object`) is found in [component](component.html), [profile](profile.html) & [ssp](ssp.html)
+- **Set Parameter Value**(`set-parameter` `type:object`) is found in [component](component.html), [profile](profile.html) & [ssp](ssp.html) <a id='set-parameter' href='#set-parameter'>§</a>
   - definition for **Set Parameter Value** is different between these schemas
     - component: Identifies the parameter that will be filled in by the enclosed value element.
     - profile: A parameter setting, to be propagated to points of insertion
     - ssp: Identifies the parameter that will be filled in by the enclosed value element.
-- **Specific Statement**(`statement` `type:object`) is found in [component](component.html) & [ssp](ssp.html)
+- **Specific Statement**(`statement` `type:object`) is found in [component](component.html) & [ssp](ssp.html) <a id='statement' href='#statement'>§</a>
   - definition for **Specific Statement** is different between these schemas
     - component: Identifies which statements within a control are addressed.
     - ssp: Identifies which statements within a control are addressed.
-- **Status**(`status` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html)
+- **Status**(`status` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html), [poam](poam.html) & [ssp](ssp.html) <a id='status' href='#status'>§</a>
   - definition: Describes the operational status of the system.
-- **Identifies the Subject**(`subject-reference` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Identifies the Subject**(`subject-reference` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html) <a id='subject-reference' href='#subject-reference'>§</a>
   - definition: A pointer to a resource based on its ID. Use type to indicate whether the identified resource is a component, inventory item, location, user, or something else.
-- **System Characteristics**(`system-characteristics` `type:object`) is found in [ssp](ssp.html)
+- **System Characteristics**(`system-characteristics` `type:object`) is found in [ssp](ssp.html) <a id='system-characteristics' href='#system-characteristics'>§</a>
   - definition: Contains the characteristics of the system, such as its name, purpose, and security impact level.
-- **System Identification**(`system-id` `type:object`) is found in [poam](poam.html) & [ssp](ssp.html)
+- **System Identification**(`system-id` `type:object`) is found in [poam](poam.html) & [ssp](ssp.html) <a id='system-id' href='#system-id'>§</a>
   - definition: A unique identifier for the system described by this system security plan.
-- **System Implementation**(`system-implementation` `type:object`) is found in [ssp](ssp.html)
+- **System Implementation**(`system-implementation` `type:object`) is found in [ssp](ssp.html) <a id='system-implementation' href='#system-implementation'>§</a>
   - definition: Provides information as to how the system is implemented.
-- **System Information**(`system-information` `type:object`) is found in [ssp](ssp.html)
+- **System Information**(`system-information` `type:object`) is found in [ssp](ssp.html) <a id='system-information' href='#system-information'>§</a>
   - definition: Contains details about all information types that are stored, processed, or transmitted by the system, such as privacy information, and those defined in NIST SP 800-60.
-- **System Inventory**(`system-inventory` `type:object`) is found in [ssp](ssp.html)
+- **System Inventory**(`system-inventory` `type:object`) is found in [ssp](ssp.html) <a id='system-inventory' href='#system-inventory'>§</a>
   - definition: A set of inventory-item entries that represent the managed inventory instances of the system.
-- **System Security Plan (SSP)**(`system-security-plan` `type:object`) is found in [ssp](ssp.html)
+- **System Security Plan (SSP)**(`system-security-plan` `type:object`) is found in [ssp](ssp.html) <a id='system-security-plan' href='#system-security-plan'>§</a>
   - definition: A system security plan, such as those described in NIST SP 800-18
-- **Task**(`task` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Task**(`task` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [poam](poam.html) <a id='task' href='#task'>§</a>
   - definition: Identifies an individual task.
-- **Test Method**(`test-method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Test Method**(`test-method` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='test-method' href='#test-method'>§</a>
   - definition: Identifies an individual test method.
-- **Test Steps**(`test-step` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Test Steps**(`test-step` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='test-step' href='#test-step'>§</a>
   - definition: Identifies an individual test step.
-- **Threat ID**(`threat-id` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Threat ID**(`threat-id` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='threat-id' href='#threat-id'>§</a>
   - definition: A pointer, by ID, to an externally-defined threat.
-- **Assessment Assets**(`tools` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html)
+- **Assessment Assets**(`tools` `type:object`) is found in [assessment-plan](assessment-plan.html) & [assessment-results](assessment-results.html) <a id='tools' href='#tools'>§</a>
   - definition: The technology tools used by the assessor to perform the assessment, such as vulnerability scanners. In the assessment plan these are the intended tools. In the assessment results, these are the actual tools used, including any differences from the assessment plan.
-- **Tracking Entry**(`tracking-entry` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html)
+- **Tracking Entry**(`tracking-entry` `type:object`) is found in [assessment-results](assessment-results.html) & [poam](poam.html) <a id='tracking-entry' href='#tracking-entry'>§</a>
   - definition: Individual remediation tracking entry, which logs an event or action taken towards the remediation of the associated risk.
-- **Parameter description**(`usage` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html)
+- **Parameter description**(`usage` `type:object`) is found in [catalog](catalog.html) & [profile](profile.html) <a id='usage' href='#usage'>§</a>
   - definition: Indicates and explains the purpose and use of a parameter
-- **System User Class**(`user` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html)
+- **System User Class**(`user` `type:object`) is found in [assessment-plan](assessment-plan.html), [assessment-results](assessment-results.html) & [ssp](ssp.html) <a id='user' href='#user'>§</a>
   - definition: A type of user that interacts with the system based on an associated role.

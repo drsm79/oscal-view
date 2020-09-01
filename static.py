@@ -78,7 +78,8 @@ def build_objects(definitions, found_in):
             continue
         string += f"- **{definitions[s][term]['title']}**"
         string += f"(`{term}` `type:{definitions[s][term]['type']}`)"
-        string += f" is found in {schema_list_links(schema_list)}\n"
+        string += f" is found in {schema_list_links(schema_list)}"
+        string += f" <a id='{term}' href='#{term}'>§</a>\n"
         if not same:
             string += f"  - definition for **{definitions[s][term]['title']}** is different between these schemas\n"
             for s in schema_list:
@@ -103,6 +104,7 @@ def build_glossary(definitions, found_in):
                 print(f'definition for {term} is different for {s}')
             else:
                 hold = definitions[s][term]
+        string += f"<a id='{term}'/>\n"
         string += f"- **{definitions[s][term]['title']}**"
         string += f"(`{term}` `type:{definitions[s][term]['type']}`)"
         string += f" is found in {schema_list_links(schema_list)}\n"
